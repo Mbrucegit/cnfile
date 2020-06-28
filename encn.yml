@@ -1,0 +1,2413 @@
+en:
+  devise:
+    confirmations:
+      new:
+        head_title: "重新发送确认"
+        title: "重新发送确认"
+        submit: "重新发送确认"
+    invitations:
+      edit:
+        header: "输入全名和密码"
+    passwords:
+      edit:
+        head_title: "修改密码"
+        title: "修改密码"
+        password: "输入新密码"
+        password_length: "(%{min_length} 最少字节)"
+        password_confirm: "确认密码"
+        submit: "修改密码"
+      new:
+        head_title: "忘记密码"
+        title: "忘记密码?"
+        submit: "重设密码"
+    registrations:
+      password_changed: "密码成功修改."
+    sessions:
+      new:
+        head_title: "登陆"
+        title: "登陆"
+        or: "或"
+        email_field: "电子邮箱"
+        email_placeholder: "john.doe@email.com"
+        password_field: "Password"
+        password_placeholder: "输入密码"
+        remember_me: "请记住我"
+        submit: "登陆"
+      create:
+        team_name: "%{user}的项目"
+      auth_token_create:
+        wrong_credentials: "自动登陆失败 (wrong credentials)."
+    unlocks:
+      new:
+        head_title: "重新发送解锁帮助"
+        title: "重新发送解锁帮助"
+        submit: "重新发送解锁帮助"
+    links:
+      login: "登录"
+      login_with_provider: "用SCinote账户登陆"
+      signup: "创建账户"
+      forgot: "忘记密码"
+      not_receive_confirmation: "没有收到邮件?"
+      not_receive_unlock: "没有收到邮件?"
+      sign_in_provider: "%{provider}登陆"
+    linkedin:
+      provider_name: "wechat"
+      complete_sign_up: "你必须创建账号"
+      email_already_taken: "%{email} 账号已经存在"
+      failed_to_save: "创建失败"
+    azure:
+      provider_name: "Azure 目录"
+      errors:
+        generic: "登入失败"
+        no_local_user_map: "No local user record found"
+        no_email: "Email is missing in auth token"
+        failed_to_save: "Failed to create new user"
+
+  doorkeeper:
+    authorizations:
+      buttons:
+        authorize: "授权"
+      new:
+        head_title: "OAuth 授权"
+        title: "授权 %{client_name} 和当前账号相连"
+        scopes_title: "将和:"
+        scope_1: "使用账号的基本信息"
+        scope_2: "创建, 读取, 更新, 和 删除 数据 within SciNote on behalf of your user account using SciNote API."
+        terms: "%{client_name} 条款适用."
+
+  activerecord:
+    errors:
+      models:
+        project:
+          attributes:
+            name:
+              taken: "项目名称必须为唯一 (包括以前项目)."
+        view_state:
+          attributes:
+            viewable_id:
+              not_unique: "用户名和母项目已经存在"
+            state:
+              wrong_state: "Wrong parameters"
+        team_repository:
+          attributes:
+            team_id:
+              same_team: "Inventory can't be shared to the same team as it belongs to"
+        my_module:
+          attributes:
+            position:
+             not_unique: "X and Y position has already been taken by another task in the experiment."
+        asset:
+          attributes:
+            file:
+              too_big: "is too big"
+        repository_snapshot:
+          attributes:
+            selected:
+              already_taken: "Task already has selected snapshot"
+        repository_list_item:
+          attributes:
+            base:
+              per_column_limit: "Too many items in the column"
+        repository_checklist_item:
+          attributes:
+            base:
+              per_column_limit: "Too many items in the column"
+
+  helpers:
+    label:
+      team:
+        name: "团队名称"
+      user:
+        full_name: "姓名"
+        initials: "简称"
+        avatar: "头像"
+
+
+  head:
+    title: "SciNote | %{title}"
+
+  body:
+    notice: "请允许 JavaScript 运行此应用."
+  nav:
+    team_switch_title: "变更团队"
+    search: "搜索..."
+    search_button: '开始!'
+    user_greeting: "你好, %{full_name}"
+    advanced_search: "高级搜索"
+    title: "LabNote"
+    academy_tooltip: "SciNote Academy"
+    user:
+      settings: "设置"
+      logout: "退出"
+    activities:
+      none: "无行动!"
+    label:
+      scinote: "SciNote"
+      dashboard: "目录"
+      projects: "家页"
+      protocols: "实验方案"
+      calendar: "日历"
+      activities: "过程"
+      repositories: "库存"
+      teams: "团队"
+      search: "搜索"
+      notifications: "通知"
+      info: "信息"
+      account: "账户"
+
+  about:
+    modal_title: "关于TeamNote"
+    core_version: "TeamNote 核心版"
+    addon_versions: "高级功能"
+
+  left_menu_bar:
+    dashboard: "目录"
+    projects: "项目"
+    repositories: "实验清单"
+    templates: "实验步骤"
+    reports: "实验报告"
+    settings: "设置"
+    activities: "活动"
+    academy: "学术院"
+    support: "技术支持"
+    support_links:
+      support: "支持中心"
+      tutorials: "指导视频"
+      core_version: "SciNote Core ver. %{version} |"
+      about: "关于"
+
+  sidebar:
+    title: "导航栏"
+    branch_expand: "展开"
+    branch_collapse: "收起"
+    no_module_group: "无工作流"
+
+  nav2:
+    all_projects:
+      index: "进行中项目"
+      archive: "已完成项目"
+      all: "所有项目"
+    projects:
+      show: "实验"
+      samples: "物料"
+      activities: "进程"
+      reports: "报告"
+      archive: "已存档实验"
+    experiments:
+      canvas: "任务"
+      archive: "已完成任务"
+    modules:
+      steps: "步骤"
+      results: "结果"
+      activities: "进程"
+      samples: "样品"
+      repositories: "清单"
+      archive: "已存档结果"
+
+  search:
+    whole_word: "匹配任何一个词"
+    whole_phrase: "匹配所有词"
+    match_case: "区分大小写"
+    index:
+      head_title: "搜索"
+      page_title: "搜索"
+      results_title_html: "'<em>%{query}</em>'的搜索结果"
+      public: "公开"
+      private: "私有"
+      archived: "已存档"
+      created_by: "创建者: "
+      created_at: "创建时间: "
+      last_modified_by: "上次修改人: "
+      last_modified_at: "上次修改时间: "
+      keywords: "关键词: "
+      authors: "作者: "
+      description: "描述: "
+      no_description: "无描述"
+      team: "团队: "
+      repository: "物料单: "
+      repository_row: "物料: "
+      project: "项目: "
+      experiment: "实验: "
+      protocol: "方案: "
+      modules: "任务: "
+      tag_no_modules: "未添加到任务中"
+      sample_no_modules: "无任务分配"
+      module: "任务: "
+      step: "步骤: "
+      result: "结果: "
+      no_name: "(无名称)"
+      error:
+        no_results: "%{q}没有结果."
+      samples:
+        sample: "样品: "
+        sample_type: "类型: "
+        no_sample_type: "无类型"
+        sample_group: "种类: "
+        no_sample_group: "无种类"
+        added_on: "添加时间: "
+        added_by: "添加人: "
+        custom_field: "%{cf}: "
+      repositories:
+        repository_row: "物料清单: "
+        added_on: "添加时间: "
+        added_by: "添加人: "
+        custom_column: "%{column}: "
+        no_modules: "未分配任务"
+      comments:
+        project: "项目评论"
+        my_module: "任务评价"
+        step: "步骤评价"
+        result: "结果评价"
+
+  comments:
+    options_dropdown:
+      header: "评论"
+      edit: "编辑"
+      delete: "删除"
+    delete_confirm: "确认删除评论?"
+    delete_error: "删除过程发送错误."
+
+  projects:
+    index:
+      head_title: "家页"
+      archive: "存档"
+      archived: "已存档"
+      active: "执行中项目"
+      hidden: "项目成员可见"
+      visible: "所有成员可见"
+      no_projects:
+        text: "目前无进行中项目."
+        title: "创建项目"
+        create_new_button: "创建新项目"
+        no_permission_title: "无创建项目权限. 请联系团队管理员."
+      new: "新项目"
+      visibility_private: "仅对项目成员可见."
+      visibility_public: "所有成员可见."
+      user_project: "%{user} 加入时间 %{timestamp}."
+      no_activities: "无进行中活动!"
+      no_comments: "没有评论!"
+      no_users: "没有用户!"
+      manage_users: "用户管理"
+      no_notifications: "目前无过截止日期任务"
+      module_overdue_html: "任务 <em>%{module}</em> 已过期 (%{days})."
+      module_overdue_days:
+        one: "1 个工作日"
+        other: "%{count} 工作日"
+      module_one_day_due_html: "任务 <em>%{module}</em> 在1天内截止."
+      user_role: "职责: "
+      user_full_name: "成员: "
+      edit_user: "编辑职责"
+      delete_user: "移除用户"
+      delete_user_confirm: "确认将用户 %{user} 从项目%{project}移除?"
+      team_filter: "显示项目"
+      all_filter: "全部"
+      start_date: "开始日期:"
+      activity_tab: "进行中"
+      users_tab: "用户"
+      notifications_tab: "截止日期"
+      comment_tab: "评论"
+      new_comment: "新评论"
+      content_loading: "载入中"
+      edit_option: "编辑"
+      archive_option: "存档"
+      archive_confirm: "确定将项目移入档案?"
+      restore_option: "恢复"
+      ooptions_header: "选项"
+      comment_placeholder: "你的留言"
+      more_comments: "更多评论"
+      modal_new_project:
+        modal_title: "创建新项目"
+        create: "创建"
+        name: "项目名称"
+        name_placeholder: "我的项目"
+        team: "团队"
+        visibility: "可见成员:"
+        visibility_hidden: "只对项目成员开放"
+        visibility_visible: "所有成员可见"
+      modal_edit_project:
+        modal_title: "编辑项目 %{project}"
+        submit: "保存"
+      modal_manage_users:
+        modal_title_html: "管理用户 <span id='manage-users-modal-project'>%{name}</span>"
+        no_users: "无用户!"
+        create: "添加"
+        select_user_role: "用户职责"
+        invite_users_link: "邀请用户"
+        invite_users_details: "加入团队 %{team}."
+        contact_admins: "如邀请其他成员加入 %{team}, 请联系项目管理员."
+    export_projects:
+      export_button: "输出项目"
+      error_title: "操作被拒绝"
+      error_text_p1_html: "你的输出已经达到每日上限. 每日输出 <strong>限制在 %{limit} 请求/天 </strong>- 目前无请求额度剩余."
+      error_text_p2_html: "请在 <strong>明天</strong>提出请求, 你的每日额度将恢复至%{limit} 次."
+      modal_title: "项目输出"
+      modal_text_p1_html: "你将输出 <strong>%{num_projects} 项目 属于 %{team}</strong> 团队. 项目将以.zip形式存储. 取决于文件大小和网络速度，输出时间在5分钟到数小时."
+      modal_text_p2_html: "输出文件下载链接将发送到您邮箱。为安全考虑，收到邮件7天后，链接将无效."
+      modal_text_p3_html: "输出文件请求限制在每天%{limit}次。 确认本次输出后，本日您还有%{num}输出."
+      modal_submit: "输出"
+      success_flash: "收到输出请求。你的请求正在处理中。"
+    table:
+      status: "状态"
+      name: "项目名"
+      start: "开始时间"
+      visibility: "可见"
+      users: "用户"
+      experiments: "实验"
+      tasks: "任务"
+    activity:
+      visibility_hidden: "项目成员可见"
+      visibility_visible: "所有团队成员"
+    create:
+      success_flash: "项目 <strong>%{name}</strong> 成功创建."
+    update:
+      success_flash: " <strong>%{name}</strong> 成功更新."
+      error_flash: "项目 <strong>%{name}</strong> 更新失败."
+    archive:
+      success_flash: "项目 <strong>%{name}</strong> 成功 存档."
+      error_flash: "项目 <strong>%{name}</strong> 存档未成功."
+    restore:
+      success_flash: "项目 <strong>%{name}</strong> 成功恢复."
+      error_flash: "项目 <strong>%{name}</strong> 未成功恢复."
+    show:
+      head_title: "%{project}"
+    samples:
+      head_title: "%{project} | 清单样本"
+    reports:
+      print_title: "%{project} | 报告"
+      index:
+        head_title: " 报告"
+        new: "新报告"
+        edit: "编辑"
+        delete: "删除"
+        deleted: "已删除"
+        thead_project_name: "项目名称"
+        thead_name: "报告名称"
+        thead_created_by: "创建者"
+        thead_last_modified_by: "修改于"
+        thead_created_at: "创建于"
+        thead_updated_at: " 更新于"
+        no_reports: "无报告!"
+        modal_new:
+          projects: "项目"
+          head_title: "创建新项目"
+          no_projects: "目前无项目."
+          message: "创建新报告. 请选择需要创建报告的项目."
+          create: "创建"
+        modal_delete:
+          head_title: "删除报告"
+          message: "确认删除?"
+          delete: "删除"
+      new:
+        head_title: "%{project} | 新报告"
+        nav_title: "报告内容 "
+        nav_print: "打印"
+        nav_download: "下载"
+        nav_pdf: "PDF格式报告"
+        nav_docx: "DOCX格式报告"
+        save_PDF_to_inventory: "存储PDF"
+        nav_save: "存储"
+        nav_close: "取消"
+        nav_sort_by: "排序"
+        nav_sort_asc: "最旧优先"
+        nav_sort_desc: "最新优先"
+        nav_sort: "排序"
+        sidebar_title: "浏览"
+        global_sort: "整个报告排序将取消此前所有排序。继续执行？"
+        unsaved_work: "确认离开? 所有未保存数据将丢失."
+        no_content_for_PDF_html: "<h1>无内容</h1>"
+        no_permissions: "没有管理该栏的权限"
+        save_PDF_to_inventory_modal:
+          description_one: "你可以将PDF报告存在Here you can save PDF report to an inventory item."
+          description_two: "请按照清单, 栏目、和项目选择次序储PDF报告. 注意栏目需要为 \"file\"类型."
+          inventory: "选择清单:"
+          inventory_column: "选择栏目:"
+          inventory_item: "选择项目:"
+          no_inventories: "无存储清单执行."
+          success_flash: "报告存储成功."
+          asset_present_warning_html: "选择项目已经有文件. 点击存储后替换文件: <ul><li>被替换文件将被彻底删除;</li><li>新文件将被存入项目.</li></ul>"
+          no_items: "选择清单无项目. 添加第一个项目。"
+          here: "此处"
+          no_columns: "选择清单无栏目. 添加文件栏目到清单."
+          nothing_selected: "无项目选择"
+      elements:
+        modals:
+          project_contents:
+            head_title: "在报告中加入内容"
+            tasks_tab: "选择任务"
+            content_tab: "选择内容"
+          project_contents_inner:
+            instructions: "你可以选择一个或多个实验."
+            no_modules: "项目无内容"
+            no_module_group: "无工作安排"
+          module_contents:
+            head_title: "添加内容至 %{module}"
+            module_tab: "任务内容"
+            steps_tab: "方案内容"
+            results_tab: "结构内容"
+          module_contents_inner:
+            instructions: "在报告中添加相关内容."
+            check_all: "所有任务内容"
+            protocol: "方案"
+            steps: "步骤"
+            completed_steps: "已完成"
+            uncompleted_steps: "未完成"
+            no_steps: "任务无步骤"
+            results: "结果"
+            result_assets: "文件"
+            result_tables: "表格"
+            result_texts: "文字"
+            no_results: "无结果"
+            activity: "进展"
+            samples: "样品"
+          experiment_contents:
+            head_title: "添加内容到实验 %{experiment}"
+            experiment_tab: "实验内容"
+            module_tab: "任务内容"
+            steps_tab: "方案步骤"
+            results_tab: "结果内容"
+          experiment_contents_inner:
+            instructions: "选择报告中包括任务"
+            no_modules: "实验中无任务"
+          step_contents:
+            head_title: "添加步骤内容 %{step}"
+            step_tab: "步骤内容"
+            results_tab: "结果"
+          step_contents_inner:
+            instructions: "从任务/步骤中选择报告需包括的内容。"
+            check_all: "选择所有步骤"
+            tables: "表格"
+            no_tables: "步骤中不含表格"
+            assets: "文件"
+            no_assets: "步骤中没有已上传文件"
+            checklists: "检查清单"
+            no_checklists: "步骤中没有检查清单"
+            comments: "评论"
+          result_contents:
+            head_title: "在结果中添加内容 %{result}"
+          result_contents_inner:
+            instructions: "报告中包括结果和评论?"
+            check_all: "所有结果"
+            comments: "评论"
+          add: "添加"
+          save_report:
+            head_title: "储存报告"
+            name: "报告题目"
+            name_placeholder: "实验报告"
+            description: "内容简述"
+            description_placeholder: "报告内容关于..."
+            save: "存储"
+        all:
+          sort_asc: "从最早排序"
+          sort_desc: "从最新排序"
+          move_up: "上移"
+          move_down: "下移"
+          remove: "从报告中删除"
+          scinote_link: "SciNote链接"
+        new_element:
+          title: "添加新元素"
+        project_header:
+          user_time: "项目创建于%{timestamp}."
+          title: " %{project}项目报告"
+        module:
+          user_time: "任务创建于 %{timestamp}."
+          started_on: "开始日期: %{started_on}"
+          no_start_date: "无开始日期"
+          due_date: "截止日期: %{due_date}"
+          no_due_date: "无截止日期"
+          no_description: "无描述"
+          tags_header: "任务标签:"
+          no_tags: "无标签"
+          protocol:
+            user_time: "方案创建于 %{timestamp}."
+        experiment:
+          user_time: "实验创建于%{timestamp}."
+          no_description: "无描述"
+          no_tags: "无标签"
+        module_activity:
+          name: "任务行动%{my_module}"
+          sidebar_name: "行动"
+          no_activity: "无行动"
+        module_samples:
+          name: "任务样品%{my_module}"
+          sidebar_name: "样品"
+          no_samples: "无样品"
+        module_repository:
+          name: "%{repository} 中任务 %{my_module}"
+          table_name: "[ %{name} ]"
+          no_items: "无项目"
+        result_asset:
+          file_name: "[ %{file} ]"
+          user_time: "%{user}上传于%{timestamp}"
+        result_table:
+          table_name: "[ %{name} ]"
+          user_time: "%{user}创建于%{timestamp}."
+        result_text:
+          user_time: "%{user}创建于%{timestamp}."
+        step:
+          sidebar_name: "步骤 %{pos}: %{name}"
+          step_pos: "步骤 %{pos}:"
+          no_description: "无描述"
+          completed:
+            user_time: "%{user}完成于%{timestamp}."
+          uncompleted:
+            user_time: "%{user}创建于 %{timestamp}."
+        step_table:
+          table_name: "[ %{name} ]"
+          user_time: "表格创建于 %{timestamp}."
+        step_asset:
+          sidebar_name: "文件%{file}"
+          file_name: "[ %{file} ]"
+          user_time: "文件上传于%{timestamp}."
+        step_checklist:
+          checklist_name: "[ %{name} ]"
+          user_time: "检查清单创建于%{timestamp}."
+          checked: "已检查"
+        result_comments:
+          sidebar_name: "评论"
+          name: "%{result}结果评论"
+          no_comments: "无评论"
+          comment_prefix: "%{user} 于%{date} %{time}:"
+        step_comments:
+          sidebar_name: "评论"
+          name: "关于%{step}的评论"
+          no_comments: "无评论"
+          comment_prefix: "%{user} 于 %{date} %{time}:"
+    experiment_archive:
+      head_title: "%{project} | 存档实验"
+      no_archived_experiments: "无存档实验!"
+      restore_option: "恢复"
+      archived_on: "存档于"
+      created_on: "创建于"
+      last_modified_on: "最新一次修改"
+      archived_on_title: "实验存档于%{date} %{time}."
+      created_on_title: "实验创建于 %{date} %{time}."
+      last_modified_on_title: "实验最新一次修改于 %{date} %{time}."
+
+  user_teams:
+    enums:
+      role:
+        guest: "游客"
+        normal_user: "成员"
+        admin: "管理员"
+
+  user_projects:
+    enums:
+      role:
+        owner: "管理员"
+        normal_user: "用户"
+        technician: "技术员"
+        viewer: "只阅"
+    edit:
+      update_role: "权限变更"
+    create:
+      select_user_role: "请选择用户权限."
+      add_user_generic_error: "用户设定有误"
+      can_add_user_to_project: "无法在项目中加入用户."
+
+  my_modules:
+    details:
+      title: "内容"
+      info_popover:
+        project_label: "项目"
+        experiment_label: "实验"
+        creator_label: "创建人"
+        creator_same_user_label: "(自建)"
+        created_label: "已创建"
+        modified_label: "已修改"
+        modified_value: "%{date} 创建 %{full_name}"
+        modified_value_without_user: "%{date}"
+      start_date: "开始日期:"
+      no_start_date_placeholder: "+ 添加开始日期"
+      due_date: "截止日期:"
+      no_due_date_placeholder: "+ 添加截止日期"
+      assigned_users: "负责人:"
+      no_assigned_users: "+ 添加负责人"
+      tags: "标签:"
+      no_tags: "+ 添加标签"
+      manage_tags: "管理标签"
+      create_new_tag: "创建新标签"
+      recent_protocols_from_repository: "方案库中方案"
+    notes:
+      title: "记录"
+      no_description: "无任务描述"
+      empty_description_edit_label: "点击此处添加记录"
+    assigned_items:
+      title: "分配任务"
+      assign_from: "分配人"
+    protocol:
+      title: "方案"
+      options_dropdown:
+        title: "方案选项"
+        load_from_repo: "从方案库中载入"
+        import: "输入方案"
+        export: "输出方案"
+        save_to_repo: "存入方案库"
+    buttons:
+      complete: "已完成任务"
+      uncomplete: "未完成任务"
+    complete_modal:
+      description: '你已完成任务中所有步骤，将任务标注为完成？'
+      leave_uncompleted: '保留任务进展状态'
+    description:
+      title: "编辑任务 %{module} 描述"
+      label: "描述"
+    due_date:
+      title: "编辑任务 %{module} 截止日期"
+      label: "截止日期"
+    states:
+      state_label: "状态:"
+      in_progress: "进展中"
+      completed: "完成于"
+      completed_on: "任务完成(%{date})"
+      due_soon: "即将截止"
+      overdue: "截止日期已过"
+    samples:
+      head_title: "%{project} | %{module} | 清单样本"
+    module_archive:
+      head_title: "%{project} | %{module} | 存档"
+      option_delete: "删除"
+      confirm_delete: "确认永久删除结果?"
+      delete_flash: "成功在<strong>%{result}</strong> 任务中<strong>%{module}</strong>删除结果."
+      archived_on: "存档于"
+      archived_on_title: "结果存档于%{date} %{time}."
+      option_download: "下载"
+      no_archived_results: "无存档结果!"
+      archive_timelabel: "存档于 %{date}"
+      restored_flash: "任务%{module}恢复成功!"
+    protocols:
+      head_title: "%{project} | %{module} | Protocols"
+      protocol_status_bar:
+        private_parent: "(私有)"
+        unlinked: "(非关联)"
+        no_description: "无步骤描述"
+        empty_description_edit_label: "Click here to enter Protocol Description (optional)"
+        keywords: "Keywords"
+        no_keywords: "no keywords"
+        protocol_created: "Protocol created:"
+        template_updated: "Template updated on:"
+        protocol_updated: "Protocol updated on:"
+        messages:
+          template_updated_html: "There is a new version of this protocol avaliable in the protocol repository.<br>Would you like to update it?"
+          protocol_updated: "The version of this protocol in the task is modified, do you wish to save it as a new protocol template?"
+          unlinked: "This protocol is not linked to the repository."        
+        btns:
+          unlink: "解除步骤链接"
+          unlink_title: "将此步骤从库中母步骤解除链接"
+          revert: "恢复步骤"
+          revert_title: "恢复库中存储步骤。所有当地的修改将丢失."
+          ave_to_repository: "存入库中"
+          save_to_repository_title: "复制此方案到库中"
+          update_self: "从库中步骤更新"
+          update_self_title: "从库中存储的步骤更新此版本"
+      confirm_link_update_modal:
+        unlink_title: "解除链接"
+        unlink_message: "确认解除链接? 解除后不跟踪修改."
+        unlink_btn_text: "解除链接"
+        revert_title: "恢复链接"
+        revert_message: "确定从库中恢复任务和步骤? 此前所有修改均被覆盖."
+        revert_btn_text: "恢复"
+        update_parent_title: "更新库中版本"
+        update_parent_message: "确认将本版本覆盖库中步骤? 将覆盖库中所有的修改."
+        update_self_title: "从库中版本更新"
+        update_self_message: "确认按照库中版本更新？将覆盖所有本地修改."
+      unlink_flash: "步骤成功解除链接."
+      unlink_error: "解除链接失败."
+      revert_flash: "步骤成功恢复."
+      revert_error: "恢复失败."
+      revert_error_locked: "恢复失败. 库中文件正在被修改."
+      update_parent_flash: "当前版本成功更新库中版本."
+      update_parent_error: "库中版本更新失败."
+      update_parent_error_locked: "恢复失败. 库中文件正在被修改."
+      update_from_parent_flash: "库中版本成功更新."
+      update_from_parent_error: "更新库中版本失败."
+      update_from_parent_error_locked: "更新库文件失败. 库中文件正在被修改."
+      load_from_repository_flash: "库中文件载入成功."
+      load_from_repository_error: "库中文件载入失败."
+      load_from_repository_error_locked: "载入库文件失败. 库中文件正在被修改."
+      load_from_repository_modal:
+        title: "从库中载入步骤"
+        text: "选择要载入步骤."
+        text2: "该操作将覆盖目前任务中步骤并解除相应链接."
+        tab_public: "团队步骤"
+        tab_private: "我的步骤"
+        tab_recent: "Recent protocols"
+        tab_archive: "已存档步骤"
+        thead_name: "姓名"
+        thead_keywords: "关键词"
+        thead_nr_of_linked_children: "已链接任务"
+        thead_published_by: "发布者"
+        thead_added_by: "添加人"
+        thead_published_on: "发布于"
+        thead_created_at: "创建于"
+        thead_updated_at: "最新修改于"
+        confirm_message: "确认从库中载入步骤? 执行后将覆盖当前步骤并解除所有链接. 当前步骤在库中版本不受影响."
+        import_to_linked_task_rep: "确认从库中载入步骤? 执行后将覆盖当前步骤并解除所有链接. 当前步骤在库中版本不受影响"
+        load: "载入"
+      copy_to_repository_modal:
+        title: "复制到库中"
+        name_label: "库中版本题目"
+        name_placeholder: "我的步骤"
+        type_label: "复制到"
+        type_public: "团队步骤"
+        type_private: "我的步骤"
+        type_text: "可将目前步骤复制至团队或个人档案. 团队步骤对所有成员可见, 我的步骤只对用户可见."
+        link_label: "将任务链接至库中"
+        link_text: "<strong>警告!</strong>&nbsp;此操作将解除目前链接的步骤."
+        error_400: "错误.步骤不能从库中复制"
+        confirm: "存入"
+      load_from_file_flash: "成功载入步骤."
+      load_from_file_error: "载入步骤失败."
+      load_from_file_error_locked: "载入步骤失败，一个或多个文件被编辑中."
+      load_from_file_size_error: "载入步骤失败. 文件大小上限为%{size}Mb."
+      load_from_file_invalid_error: "文件名或文件后缀无效."
+      load_from_file_protocol_general_error: "文件载入失败. 某些栏目可能包覆太多项目。(最多为 %{max} and 最少为 %{min})"
+    results:
+      head_title: "%{project} | %{module} | 结果"
+      add_label: "添加新结果:"
+      new_text_result: "文字"
+      new_table_result: "表格"
+      new_asset_result: "文件"
+      published_on: "发布于 <em>%{timestamp}</em> 发布人<em>%{user}</em>"
+      published_table: "表格输入时间 %{timestamp}."
+      published_text:  "文字输入时间 %{timestamp}."
+      published_asset:  "文件上传时间 %{timestamp}."
+      expand_label: "展开所有"
+      collapse_label: "收起所有"
+      empty_name: "添加题目"
+      archive_confirm: "确认结果存档?"
+      info_tab: "信息"
+      comments_tab: "评论"
+      comment_title: "%{user} 于 %{time}:"
+      options:
+        comment_title: "评论"
+        no_comments: "无评论"
+        new_comment: "新评论"
+        edit_title: "编辑结果"
+        archive_title: "结果存档"
+    activities:
+      head_title: "%{project} | %{module} | 活动"
+      no_activities: "当前任务无活动."
+      more_activities: "更多活动"
+    repository:
+      head_title: "%{project} | %{module} | 清单 %{repository}"
+      export: '输出'
+      full_view:
+        modal_live_header: '%{repository_name}: Live version'
+        modal_snapshot_header: '%{repository_name}: Snapshot of %{snaphot_date}'
+        assign_modal_header: 'Assign from %{repository_name} inventory'
+      snapshots:
+        simple_view:
+          live_bottom_label: 'Live version'
+          snapshot_bottom_label: 'Snapshot version %{date_time}'
+          snapshot_tag: 'Snapshot'
+        full_view:
+          header: 'Versions'
+          live: 'Live version'
+          live_description: 'Regularly updated from the inventory'
+          no_live_version: 'Inventory was deleted'
+          no_assigned_items: 'No items assigned'
+          no_snapshots_label: 'You have not created any snapshots yet. To do so click the button bellow.'
+          versions_sidebar_button: 'View versions'
+          create_button: 'Create snapshot'
+          set_default_button: 'Set as default view'
+          created_by: 'by %{full_name}'
+          provisioning: 'Provisioning'
+      flash:
+        assign_to_task_html: "Successfully assigned <strong>%{assigned_items}</strong> item(s) to the task."
+        assign_to_task_and_downstream_html: "Successfully assigned <strong>%{assigned_items}</strong> item(s) to the task and downstream tasks."
+        unassign_from_task_html: "Successfully unassigned <strong>%{unassigned_items}</strong> item(s) from the task."
+        unassign_from_task_and_downstream_html: "Successfully unassigned <strong>%{unassigned_items}</strong> item(s) from the task and downstream tasks."
+        assign_and_unassign_from_task_html: "Successfully assigned <strong>%{assigned_items}</strong> and unassigned <strong>%{unassigned_items}</strong> item(s) from the task."
+        assign_and_unassign_from_task_and_downstream_html: "Successfully assigned <strong>%{assigned_items}</strong> and unassigned <strong>%{unassigned_items}</strong> item(s) from the task and downstream tasks."
+        update_error: "There was an error in updating your item(s)."   
+    modals:
+      update_repository_record:
+        title: "Update %{repository_name} items to %{my_module_name} task"
+        message: "Do you want to update %{size} items only from this task, or update them from this task & downstream tasks in the workflow also?"
+        task: 'Update task'
+        task_and_downstream: 'Update task & downstream'
+        newly_assigned_items: "Items newly assigned"
+        items_will_be_removed: "Items that will be removed"
+      assign_repository_record:
+        title: '分配 %{repository_name} 类目 到任务 %{my_module_name}'
+        message: 确认分配 %{size} 类目仅到目前任务, 或者在后续任务陆续分配?
+        task: '任务 & 后续'        
+        task_and_downstream: 'Assign to task & downstream'
+modules_list_partial:
+      private_tasks_html: 'Assigned to <strong>%{nr}</strong> private task(s)'
+      no_results:
+        title: 'No results found'
+        description: 'Try another search request'
+    unshared_inventory:
+      title_html: The inventory <b>%{inventory_name}</b> is no longer shared with your team.
+      body_html: This inventory has been ushared with your team by the inventory’s owner. To view the item/s that are assigned to your task/s contact the <b>%{team_name}</b> team administrator <b>%{admin_name}</b> (<b>%{admin_email}</b>).
+  experiments:
+    new:
+      create: '新实验'
+      modal_title: '创建新实验'
+      modal_create: '创建'
+      name: '实验名称'
+      name_placeholder: '我的实验'
+      description: '实验描述'
+    edit:
+      modal_title: '编辑'
+      modal_create: '存档'
+      label_title: "编辑"
+      panel_label: '改动'
+      add-description: '添加描述..'
+      no-description: '无描述'
+      no_workflowimg: '无工作流'
+      add_task: '添加任务到实验...'
+    create:
+      success_flash: "成功创建实验 %{experiment}"
+      error_flash: '未能创建新实验.'
+    update:
+      success_flash: "成功更新实验 %{experiment}"
+      error_flash: '未能更新新实验.'
+    archive:
+      success_flash: "成功存档实验%{experiment}"
+      error_flash: '未能存档实验.'
+      label_title: '存档'
+    clone:
+      modal_title: '复制实验 %{experiment}作为模版'
+      label_title: '复制模版'
+      modal_submit: '复制'
+      success_flash: '成功复制实验 %{experiment} 作为模版.'
+      error_flash: '未能复制实验作为模版.'
+      current_project: '(当前项目)'
+    move:
+      modal_title: '转移实验 %{experiment}'
+      notice: '转移实验仅限于同项目成员之间.'
+      label_title: '转移'
+      modal_submit: '转移'
+      success_flash: "成功转移实验 %{experiment}"
+      error_flash: ' 不能转移实验，实验名字以被使用. '
+      no_projects: '目前实验无项目转移.'
+    canvas:
+      archive_confirm: "确认存档实验?"
+      actions: '行动'
+      head_title: "%{project} | 总括"
+      canvas_edit: "编辑实验"
+      zoom: "放大: "
+      reload_on_submit: "正在存储. 重新载入页面可能会导致错误."
+      modal_manage_tags:
+        head_title: "管理标签"
+        subtitle: "显示任务 %{module}所有标签"
+        no_tags: "无标签!"
+        edit_tag: "编辑标签."
+        remove_tag: "从任务 %{module}中移除标签."
+        delete_tag: "从所有任务中删除此标签."
+        save_tag: "存储标签."
+        cancel_tag: "取消标签修改."
+        create: "添加"
+        create_new: "新标签"
+      edit:
+        new_module: "新任务"
+        new_module_hover: "拖入以下窗口"
+        save: "保存工序"
+        save_short: "保存"
+        cancel: "取消"
+        unsaved_work: "确认离开页面，所有数据未保存。"
+        drag_connections: "从此处拖动开始链接"
+        options_header: "选项"
+        edit_module: "任务重命名"
+        clone_module: "从模版中复制任务 (只复制实验步骤)"
+        clone_module_group: "从模版中复制工作流 (只复制实验步骤)"
+        move_module: "转移任务到其他实验"
+        move_module_group: "转移工作流到其他实验"
+        delete_module: "存档任务"
+        delete_module_group: "存档任务"
+        modal_new_module:
+          title: "添加新任务"
+          name: "任务名"
+          name_placeholder: "我的任务"
+          confirm: "添加"
+        modal_edit_module:
+          title: "重命名任务"
+          name: "任务名"
+          confirm: "重命名"
+        modal_move_module:
+          title: "转移任务到实验"
+          confirm: "转移"
+          no_experiments: "无转移实验目标."
+        modal_move_module_group:
+          title: "转移工作流到实验"
+          confirm: "转移"
+          no_experiments: "无转移实验目标."
+        modal_delete_module:
+          title: "存档任务"
+          confirm: "存档"
+          message: "确认存档任务 %{module}? 任务样品和位置将被移除."
+        modal_delete_module_group:
+          title: "存档工作流"
+          confirm: "存档"
+          message: "确认存档任务 %{module} ? 所有任务样品和位置将被移除."
+      popups:
+        info_tab: "任务信息"
+        no_description: "此任务无描述."
+        full_info: "编辑描述"
+        users_tab: "分配任务"
+        no_users: "此任务尚未分配."
+        manage_users: "管理用户"
+        module_user_join: "加入于 %{date}."
+        module_user_join_full: "%{user} 在 %{date} %{time}加入."
+        activities_tab: "活动"
+        no_activities: "无活动!"
+        more_activities: "所有活动"
+        comments_tab: "评论"
+        no_comments: "无评论"
+        more_comments: "更多评论"
+        comment_placeholder: "你的信息"
+        new_comment: "新评论"
+        samples_tab: "样本"
+        no_samples: "无样本!"
+        manage_samples: "管理样本"
+      full_zoom:
+        due_date: "截止日期"
+        no_due_date: "未确定"
+        modal_manage_users:
+          modal_title: "管理用户"
+          no_users: "无用户"
+          user_join: "加入于%{date}."
+          user_join_full: "%{user}于%{date} %{time}加入."
+          create: "添加"
+          invite_users_link: "邀请用户"
+          invite_users_details: "到团队 %{team}."
+          contact_admins: "如需邀请更多用户到%{team}, 请联系管理员."
+      update:
+        success_flash: "项目成功更新."
+    module_archive:
+      head_title: "%{experiment} | 任务存档"
+      no_archived_modules: "无存档任务!"
+      restore_option: "恢复"
+      archived_on: "存档于"
+      archived_on_title: "任务存档于%{date} %{time}."
+
+  tags:
+    new:
+      head_title: "创建标签"
+      title: "创建新标签"
+      name: "标签名"
+      name_placeholder: "我的标签"
+      color: "标签颜色"
+      create: "创建标签"
+    create:
+      new_name: "新标签"
+      success_flash: "成功创建标签 <strong>%{tag}</strong>."
+      error_flash: "不能创建新标签."
+    destroy:
+      success_flash: "成功移除标签<strong>%{tag}</strong>."
+      error_flash: "不能移除标签 <strong>%{tag}</strong>."
+
+  result_texts:
+    new:
+      head_title: "%{project} | %{module} | 添加文字结果"
+      title: "添加结果到任务 %{module}"
+      create: "添加"
+    edit:
+      head_title: "%{project} | %{module} | 编辑文字结果"
+      title: "编辑结果 %{module}"
+      update: "更新"
+    create:
+      success_flash: "成功添加结果到任务 <strong>%{module}</strong>"
+    update:
+      success_flash: "成功更新文字到任务 <strong>%{module}</strong>"
+    archive:
+      success_flash: "成功存档文字到任务<strong>%{module}</strong>"
+    destroy:
+      success_flash: "结果已删除."
+
+  result_assets:
+    new:
+      head_title: "%{project} | %{module} | 添加结果文件"
+      title: "添加结果到任务 %{module}"
+      create: "添加"
+    edit:
+      head_title: "%{project} | %{module} | 编辑结果"
+      title: "编辑任务 %{module}的结果"
+      uploaded_asset: "上传文件"
+      update: "更新"
+      locked_file_error: “文件正在被其他用户修改.”
+    create:
+      success_flash: "成功添加文件到任务 <strong>%{module}</strong>"
+    update:
+      success_flash: "成功更新文件到任务 <strong>%{module}</strong>"
+    archive:
+      success_flash: "成功存档文件到任务 <strong>%{module}</strong>"
+      error_flash: "未能存档文件. 其他用户正在修改文件."
+    destroy:
+      success_flash: "文件删除成功."
+    wopi_open_file: "用%{app}打开"
+    wopi_edit_file: "用%{app}编辑"
+    error_flash: '发生错误，请重试.'
+
+  result_tables:
+    new:
+      head_title: "%{project} | %{module} | 添加结果列表"
+      title: "添加结果到任务 %{module}"
+      create: "添加"
+    edit:
+      head_title: "%{project} | %{module} | 编辑结果列表"
+      title: "从%{module}任务中编辑结果"
+      update: "更新"
+    create:
+      success_flash: "成功添加结果到任务 <strong>%{module}</strong>"
+    update:
+      success_flash: "成功在<strong>%{module}</strong>更新图表结果"
+    archive:
+      success_flash: "成功将<strong>%{module}</strong>图表结果存档"
+    destroy:
+      success_flash: "结果成功删除."
+
+  repositories:
+    repository: "清单: %{name}"
+    icon_title:
+      i_shared: "Shared inventory (owned by your Team)"
+      shared_edit: "Shared inventory (owned by %{team_name}). You can edit."
+      shared_read: "Shared inventory (owned by %{team_name}). You can view."
+    index:
+      head_title: "Inventories"
+      title: "Inventories"
+      add_new_repository_tab: "Add inventory"
+      delete_flash: "\"%{name}\" inventory was successfully deleted!"
+      rename_flash: "\"%{old_name}\" inventory was successfully renamed to \"%{new_name}\"!"
+      copy_flash: "\"%{new}\" inventory was successfully copied from \"%{old}\"!"
+      columns: "Columns"
+      edit_inventory: "Edit Inventory"
+      share_inventory: "Share"
+      view_only_permission_label: "You have veiw-only permission"
+      show_per_page: "Show %{number} per page"
+      filter_inventory: "Filter inventory item"
+      snapshot_provisioning_in_progress: 'Editing is disabled while a snapshot is being created. This will only take a moment.'
+
+      options_dropdown:
+        header: "Edit inventory"
+        manage_columns: '管理栏目'
+        import_items: '输入项目'
+        export_items: '输出项目'
+        rename: "重命名"
+        copy: "复制清单"
+        delete: "删除"
+      modal_delete:
+        title_html: "删除 <em>%{name}</em>"
+        message_html: "确认删除 <em>%{name}</em>? 删除后不可恢复."
+        alert_heading: "删除清单有以下后果:"
+        alert_line_1: "所有数据丢失;"
+        alert_line_2: "所有参考链接失效."
+        delete: "删除"
+      modal_rename:
+        title_html: "重命名 <em>%{name}</em>"
+        name: "新名称"
+        name_placeholder: "我的清单"
+        rename: "重命名"
+      modal_copy:
+        title_html: "复制 <em>%{name}</em>"
+        name: "新名称"
+        description: "仅复制清单结构Only the structure of the inventory is going to be copied."
+        name_placeholder: "我的清单"
+        copy: "复制"
+      modal_create:
+        title: "创建新清单"
+        name_label: 清单名称
+        name_placeholder: "我的清单"
+        submit: "创建"
+        success_flash: "清单<strong>%{name}</strong> 成功创建."
+    modal_share:
+        title: "Share Inventory"
+        submit: "Save sharing options"
+        share_with_team: "Share with Team"
+        can_edit: "Can Edit"
+        all_teams: "All teams (current & new)"
+        all_teams_tooltip: "This will disable individual team settings"
+        success_message: "Selected sharing options for the Inventory %{inventory_name} have been saved."
+    show:
+      archived_inventory: "Archived %{repository_name}"
+      subtitle: "Owned by %{team_name}"
+      your_team: "your Team"
+      show_active_items: "Show active items"
+      show_archived_items: "Show archived items"
+      archived_view_label:
+        active: "These are individually archived items from the %{repository_name} inventory. The inventory itself is active."
+        archived_on: "Inventory archived on"
+        archived_by: "by"
+
+    table:
+      id: 'ID'
+      assigned: "Assigned"
+      assigned_search: 'Search...'
+      assigned_tooltip: "%{tasks} tasks in &#10;%{experiments} experiments,&#10;%{projects} projects"
+      row_name: "Name"
+      added_on: "Added on"
+      added_by: "Added by"
+      archived_on: "Archived on"
+      archived_by: "Archived by"
+      enter_row_name: "Enter name"
+      locked_item: "This is read-only item."
+      assets:
+        select_file_btn: "Select File (Max %{max_size} MB)..."
+      text:
+        errors:
+          too_long: "Text is too long (maximum is %{max_length} characters)"
+        enter_text: "Enter text"
+      number:
+        enter_number: "Enter number"
+        errors:
+          wrong_format: "Not correct number format"
+      list:
+        select_item: "Select..."
+      status:
+        set_status: "Set Status..."
+      checklist:
+        set_checklist: "Set Checklist..."
+      date_time:
+        errors:
+          set_all_or_none: 'Needs to set both or none'
+          not_valid_range: 'Range is not valid.'
+      name:
+        errors:
+          too_long: "Item name is too long (maximum is %{max_length} characters)"
+          is_empty: "Item name should be filled"
+
+    add_new_record: "New item"      
+    import_records:
+      import: “输入”
+      no_header_name: “无栏目名”
+      success_flash: "%{number_of_rows} / %{total_nr} 新项目成功输入."
+      partial_success_flash: "%{nr} / %{total_nr} 成功输入. 其他行输入有误."
+      error_message:
+        items_limit: "文件包括太多行. 最多允许 %{items_size} 类别上传."
+        temp_file_not_found: "文件不存在.."
+        session_expired: "已过期. 请重试."
+        no_data_to_parse: "无可转换数据."
+        no_column_name: "需要栏目名!"
+        duplicated_values: "栏目重复."
+        errors_list_title: "栏目输入有误:"
+        no_repository_name: "项目名需要!"
+    edit_record: "编辑"
+    copy_record: "复制"
+    delete_record: "Delete"
+    archive_record: "Archive"
+    restore_record: "Restore"
+    save_record: "Save"
+    cancel_save: "Cancel"
+    assign_records_to_module: "Assign"
+    unassign_records_from_module: "Unassign"
+    columns: "Columns"
+    column_new_text: "New column"
+    column_create: "Create"
+    columns_delete: "Delete"
+    columns_changed: "Someone removed/added a new column to the inventory in use. To prevent data inconsistency we will reload this page for you."
+    columns_visibility: "Visible columns"
+    view_all_records: "View All Items"
+    view_assigned_records: "View Assigned Items"
+    modal_delete_record:
+      title: "删除项目"
+      notice: "确认删除所有项目(s)?"
+      delete: "删除"
+    modal_delete_column:
+      title: "删除一栏"
+      message: "确认删除所选栏目 %{column}? 此操作不可恢复."
+      alert_heading: "删除栏目有以下后果:"
+      alert_line_1: " %{nr} 所有信息将丢失;"
+      alert_line_2: "此栏目从所有成员栏目中删除."
+      delete: "删除"
+    modal_parse:
+      title: '输入类目'
+      warning_1: '注意输入Dropdown栏目的数量！ 每个类目Dropdown上限为 %{limit}.'
+      warning_2: '不支持输入到文件栏目.'
+      import: '输入'
+    modal_import:
+      title: '输入类目'
+      notice: '可上传 .csv、.txt、.tsv 、.xlsx文件. 第一行为头部信息.'
+      upload: '上传'
+      limit_description_html: 'When importing items, try to limit the amount to <b>500</b>.<br>Otherwise it may impede to process.'
+    js:
+      permission_error: "无编辑权限."
+      not_found_error: "项目不存在."
+      column_added: "新项目成功创建."
+      empty_column_name: "请输入栏目名."      
+      leaving_warning: "You have made some changes, are you sure you want to leave this page?"
+    create:
+      success_flash: "成功添加项目<strong>%{record}</strong> 到清单 <strong>%{repository}</strong>"
+    update:
+      success_flash: "更新<strong>%{repository}</strong>中<strong>%{record}</strong>  "
+    destroy:
+      success_flash: "%{records_number} 项目成功删除."
+      contains_other_records_flash: "%{records_number}项目成功删除. %{other_records_number} 为其他用户创建，已保留."
+      no_records_selected_flash: "无项目选择."
+      no_deleted_records_flash: "无项目删除. %{other_records_number} 为其他用户创建，已保留."
+    default_column: 'Name'
+    copy_records_report: "%{number} item(s) successfully copied."
+    archive_inventories:
+      success_flash: "Inventories were successfully archived!"
+      unsuccess_flash: "Inventories were unsuccessfully archived!"
+      invalid_inventories_flash: "Please provide valid inventories"
+    restore_inventories:
+      success_flash: "Inventories were successfully restored!"
+      unsuccess_flash: "Inventories were unsuccessfully restored!"
+    archive_records:
+      success_flash: "Successfully archived items in inventory <strong>%{repository}</strong>"
+      unsuccess_flash: "Unsuccessfully archived items in inventory <strong>%{repository}</strong>"
+      invalid_rows_flash: "Please provide valid rows"
+    restore_records:
+      success_flash: "Successfully restored items in inventory <strong>%{repository}</strong>"
+      unsuccess_flash: "Unsuccessfully restored items in inventory <strong>%{repository}</strong>"
+    multiple_share_service:
+      unable_to_share: "Unable to share %{repository} inventory with %{team} team."
+      unable_to_unshare: "Unable to unshare %{repository} inventory with %{team} team."
+      unable_to_update: "Unable to update sharing %{repository} inventory with %{team} team."
+      not_allowed: "You are not allowed to share this repository!"
+      invalid_arguments: "Can't find %{key}"
+      nothing_to_delete: "Can't find sharing relation for destroy"
+    my_module_update_row_service:
+      invalid_arguments: "Can't find %{key}"
+    my_module_assigned_snapshot_service:
+      invalid_arguments: "Can't find %{key}"
+libraries:
+    manange_modal_column_index:
+      title: "Manage columns"
+      add_column: "Add column"
+    manange_modal_column:
+      name_placeholder: "Enter column name..."
+      name: "Name"
+      colum_type: "Column type"
+      dropdown_item_descirption: "Dropdown items should be separated by comma."
+      change_multi_select_items_warning: "Be careful: changing existing list items will result in deselecting previously selected items."
+      too_many_items_label: " of %{limit} items"
+      select:
+        repository_text_value: "Text"
+        repository_number_value: "Number"
+        repository_date_value: "Date"
+        repository_date_range_value: "Date"
+        repository_time_value: "Time"
+        repository_time_range_value: "Time"
+        repository_date_time_value: "Date & Time"
+        repository_date_time_range_value: "Date & Time"
+        repository_checklist_value: "Checklist"
+        repository_status_value: "Status"
+        repository_list_value: "Dropdown"
+        repository_asset_value: "File"
+      new:
+        title: "Add New Column"
+        button: "Save column"
+      edit:
+        title: "Edit %{name} Column"
+        button: "Update column"
+      number_type:
+        decimals_label: "Decimal digits"
+      list_type:
+        delimiter_label: "Delimiter"
+        dropdown_items_label: "Dropdown items"
+        dropdown_item_select_option: "Select option..."
+        delimiters:
+          auto: "Auto"
+          return: "Return"
+          space: "Space"
+          semicolon: "Semicolon"
+          comma: "Comma"
+        items_placeholders:
+          auto: "Enter dropdown list options..."
+          return: "Enter dropdown list options one per line:\nDropdown list option 1\nDropdown list option 2\n..."
+          comma: "Enter dropdown list options, separated by commas..."
+          semicolon: "Enter dropdown list options, separated by semicolons..."
+          space: "Enter dropdown list options, separated by space..."
+      status_type:
+        status_options_label: "Status options"
+        add_status_label: "Add status option"
+        errors:
+          icon_and_name_error: "Status icon and status name should be filled"
+      datetime_type:
+        range_label: 'Range'
+      checklist_type:
+        multiple_options: 'selected'
+        all_options: 'All options'
+        checklist_items: 'Checklist items'
+        items_placeholders:
+          auto: "Enter checklist items..."
+          return: "Enter checklist items one per line:\nChecklist item 1\nChecklist item  2\n..."
+          comma: "Enter checklist items, separated by commas..."
+          semicolon: "Enter checklist items, separated by semicolons..."
+          space: "Enter checklist items, separated by space..."
+
+    repository_columns:
+      head_title: '%{repository} | Manage Columns'
+      repository_list_items_limit: "Dropdown items limit reached max. %{limit}"
+      no_permissions: "You don't have permissions on that repository"
+      update:
+        success_flash: "Column %{name} was successfully updated."
+      create:
+        success_flash: "Column %{name} was successfully created."
+      destroy:
+        success_flash: "Column %{name} was successfully deleted."
+        error_flash: "Something went wrong! Please try again later."
+    index:
+      head_title: "Inventories"
+      head_title_archived: "Archived Inventories"
+      table:
+        name: "Name"
+        number_of_items: "No. of items"
+        shared: "Shared"
+        ownership: "Ownership"
+        added_on: "Added on"
+        added_by: "Added by"
+        archived_on: "Archived on"
+        archived_by: "Archived by"
+      shared_for_viewing: "For viewing"
+      shared_for_editing: "For editing"
+      not_shared: "No"
+      switch_view:
+        active: Show active inventories
+        archived: Show archived inventories
+      buttons:
+        edit: "Edit"
+        duplicate: "Duplicate"
+        archive: "Archive"
+        restore: "Restore"
+        delete: "Delete"
+      no_libraries:
+        create_new_button: "New Inventory"
+    show:
+      head_title: "Inventories | %{library}"
+  repository_row:
+    modal_info:
+      ID: 'ID:'
+      head_title: "'%{repository_row}'信息"
+      added_on: "添加于"
+      added_by: "添加人"
+      custom_field: "%{cf}: "
+      title: "此类目分配给 %{nr} 任务."
+      private_tasks: "%{nr} task(s) are private and will not be displayed."
+      no_tasks: "此类目目前无任务分配."
+  samples:
+    columns: "栏目"
+    columns_visibility: "可见/隐藏"
+    columns_delete: "删除"
+    types_and_groups: "类型和分组"
+    actions: "活动"
+    add_new_sample: "添加新样品"
+    import: "输入"
+    export: "输出"
+    assign_samples_to_module: "分配"
+    unassign_samples_to_module: "未分配"
+    delete_samples: "删除"
+    edit_sample: "编辑"
+    save_sample: "保存"
+    cancel_save: "取消"
+    column_create: "创建"
+    column_new_text: "新栏目"
+    column_visibility: "可见栏"
+    add_new_sample_type: "添加样品类型"
+    add_new_sample_group: "添加样品分组"
+    add_new_column: "添加栏目"
+    view_all_samples: "所有样品可见"
+    view_assigned_samples: "只显示分配样品"
+    modal_info:
+      added_on: "添加于"
+      added_by: "添加人"
+      custom_field: "%{cf}: "
+      head_title: "样品'%{sample}信息'"
+      title: "该样品分配给 %{nr} 任务."
+      no_tasks: "此样品目前无分类."
+      no_group: "无样品分组"
+      no_type: "无样品类型"
+      sample_group: "样品组:"
+      sample_type: "样品类型:"
+    modal_import:
+      title: "输入样品"
+      notice: "你可以上传 .csv、.txt、.tsv 或者Excel(.xlsx)文件."
+      no_header_name: '无栏目名'
+      upload: "上传文件"
+    modal_delete:
+      title: "删除样品"
+      notice: "确认删除?"
+      delete: "删除"
+    modal_add_custom_field:
+      title_html: "在 <strong>%{team}</strong>中添加新栏"
+      create: "添加新栏"
+    modal_delete_custom_field:
+      title: "删除栏目"
+      message: "确认删除 %{cf}? 删除后不可恢复."
+      alert_heading: "删除栏目有以下后果:"
+      alert_line_1: "此栏中所有 %{nr} 样品信息删除;"
+      alert_line_2: "此栏从所有成员中删除."
+      delete: "删除"
+    modal_add_new_sample_group:
+      title_html: "添加新样品分组到 <strong>%{team}</strong>"
+      create: "添加新样品分组"
+    modal_add_new_sample_type:
+      title_html: "添加新样品类型到<strong>%{team}</strong>"
+      create: "添加新样品类型"
+    table:
+      assigned: "已分配"
+      sample_name: "样品名"
+      sample_type: "样品类型"
+      sample_group: "样品类型"
+      added_on: "添加于"
+      added_by: "添加人"
+      no_group: "无样品分组"
+      no_type: "无样品类型"
+      add_sample_type: "添加新样品类型"
+      add_sample_group: "添加新样品分组"
+    new:
+      head_title: "%{team} | 添加新样品"
+      title: "添加新样品到%{team}"
+      create: "添加新样品"
+      sample_type: "样品类型"
+      sample_group: "样品类型"
+      no_group: "无样品分组"
+      no_type: "无样品类型"
+      edit_sample_type: "编辑样品类型"
+      edit_sample_group: "编辑样品类型"
+    edit:
+      head_title: "%{team} | 编辑样品"
+      title: "编辑 %{team} %{sample}"
+      create: "编辑样品"
+      scf_does_not_exist: "此类别不存在."
+    create:
+      success_flash: "成功将样品 <strong>%{sample}</strong> 加入 <strong>%{team}</strong>"
+    update:
+      success_flash: "成功更新 样品<strong>%{sample}</strong> 到 <strong>%{team}</strong>"
+    destroy:
+      success_flash: "%{sample_number} 样品成功删除."
+      contains_other_samples_flash: "%{sample_number} 样品成功删除. %{other_samples_number} 其他用户创建样品不受影响."
+      no_sample_selected_flash: "无样品选择."
+      no_deleted_samples_flash: "无删除样品. %{other_samples_number} 其他用户创建样品不受影响."
+    js:
+      permission_error: "无编辑样品权限."
+      not_found_error: "样品不存在."
+      column_added: "新栏目创建成功."
+      empty_column_name: "请输出栏目名."
+  sample_types:
+    index:
+      head_title: '样品类型'
+      sample_types: '样品类型'
+      sample_groups: '样品分组'
+      new: '创建样品类型'
+      destroy_modal_title: "删除\"%{name}\"类型?"
+      destroy_modal_body: '该操作无法恢复，其他用户中的类型也被删除.'
+      destroy_modal_submit: '删除e'
+      destroy_flash: "\"%{name}\"成功删除!"
+
+  custom_fields:
+    new:
+      title_html: "添加新栏目到 <strong>%{team}</strong>"
+      create: "添加新栏目"
+    create:
+      success_flash: "成功添加新栏目 <strong>%{custom_field}</strong> 到团队 <strong>%{team}</strong>."
+
+  teams:
+    parse_sheet:
+      head_title: "%{team} | 输入样品"
+      title: "输入样品到 %{team}"
+      help_text: "匹配上传文件和数据库中栏目."
+      scinote_columns_html: "<em>SciNote</em> 栏:"
+      file_columns: "已输入栏目:"
+      example_value: "已输入文件内容:"
+      do_not_include_column: "不包括此栏"
+      errors:
+        invalid_file: "文件无效. 确认文件用 %{encoding}编码."
+        invalid_extension: "文件扩展名无效."
+        empty_file: "选择文件内容为空."
+        temp_file_failure: "无法创建临时文件，请联系管理员."
+        no_file_selected: "没有选择文件."
+        errors_list_title: "样品输入有误:"
+        list_row: "行 %{row}"
+        list_error: "%{key}: %{val}"
+    import_samples:
+      head_title: "%{team} | 输入样品"
+      title: "输入样品到团队 %{team}"
+      sample:
+        one: "1份样品"
+        other: "%{count} 份样品"
+      success_flash: "%{nr} of %{samples} 成功输入."
+      partial_success_flash: "%{nr} of %{samples} 成功输入. 其他行有错误."
+      errors:
+        temp_file_not_found: "没有发现文件，重新输入."
+        session_expired: "登陆已过期. 请重新输入样品."
+        no_data_to_parse: "无输入数据."
+        no_sample_name: "样品名不能为空!"
+        duplicated_values: "存在重复栏目."
+
+  sample_groups:
+    index:
+      head_title: '样品分组'
+      new: '创建样品分组'
+      destroy_modal_title: "删除 \"%{name}\" 分组?"
+      destroy_modal_body: '删除不可恢复，其他用户的相同分组也将被删除.'
+      destroy_modal_submit: '永久删除样品分组'
+      destroy_flash: "\"%{name}\" 样品分组成功删除!"
+    color_label: "分组颜色"
+    create:
+      success_flash: "成功添加 <strong>%{sample_group}</strong> 到团队 <strong>%{team}</strong>."
+  system_notifications:
+    navbar:
+      tooltip: '新的通知'
+    emails:
+      subject: "你收到了新的通知"
+      intro_paragraph: "你好 %{user_name}, 你收到了新的通知:"
+    index:
+      whats_new: "新信息"
+      more_notifications: "显示更多通知"
+      no_notifications: "无更多通知"
+      settings: "设定"
+      see_all: "显示所有"
+  activities:
+    index:
+      global_activities_title: "活动"
+      today: "今天"
+      more_activities: "显示更多"
+      no_activities: "无活动!"
+      no_activities_message: "无可展示活动. ."
+      no_activities_task_message: "无可展示活动."
+      activity_counter_label: " 活动"
+      activities_counter_label: " 活动"
+      expand_all: "展开"
+      collapse_all: "收起"
+    modal:
+      modal_title: "活动"
+    result_type:
+      text: "文字"
+      table: "表格"
+      asset: "文件"
+    wupi_file_editing:
+      started: "编辑开始"
+      finished: "编辑结束"
+    file_editing:
+      started: "editing started"
+      finished: "editing finished"
+    protocols:
+      my_to_team_message: '我的步骤到团队步骤'
+      team_to_my_message: '团队步骤到我的步骤'
+
+user_my_modules:
+    new:
+      head_title: "%{project} | %{module} | 添加成员"
+      title: "添加成员到任务 %{module}"
+      create: "添加成员到任务"
+      no_users_available: "此任务已包括所有成员."
+      assign_user: "添加用户"
+      back_button: "返回任务"
+    create:
+      success_flash: "成功添加%{user} 到<strong>%{module}</strong>中."
+      error_flash: "无法添加%{user} 到<strong>%{module}</strong>中 ."
+    destroy:
+      success_flash: "成功移除<strong>%{module}</strong>中 %{user}."
+      error_flash: " 无法移除<strong>%{module}</strong>中 %{user}."
+
+  step_comments:
+    new:
+      head_title: "%{project} | %{module} |添加评论到步骤"
+      title: "添加评论到步骤 %{step}"
+      create: "添加评论"
+    create:
+      success_flash: "成功添加评论到步骤 <strong>%{step}</strong>."
+
+  result_comments:
+    new:
+      head_title: "%{project} | %{module} | 添加评论到结果"
+      title: "添加评论到结果"
+      create: "添加评论"
+    create:
+      success_flash: "成功添加评论."
+
+  users:
+    enums:
+      status:
+        active: "有效"
+        pending: "待接受"
+    invitations:
+      edit:
+        head_title: "接受邀请"
+    registrations:
+      edit:
+        head_title: "我的信息"
+        title: "我的信息"
+        avatar_label: "头像"
+        avatar_btn: "编辑头像"
+        avatar_title: "改变头像"
+        avatar_edit_label: "上传头像"
+        avatar_submit: "上传"
+        avatar_total_size: "头像文件需小于0.2MB."
+        name_label: "姓名"
+        name_title: "改变姓名"
+        initials_label: "简写"
+        initials_title: "更换简写"
+        email_label: "邮箱"
+        email_title: "更换邮箱"
+        new_email_label: "新邮箱"
+        current_password_label: "目前密码"
+        password_explanation: "(改变密码需要目前的密码)"
+        waiting_for_confirm: "等待邮件确认: %{email}"
+        password_label: "密码"
+        password_title: "更换密码"
+        new_password_label: "新密码"
+        new_password_2_label: "确认新密码"
+      new:
+        head_title: "创建账号"
+        team_name_label: "团队名称"
+        team_name_placeholder: "xxx研究组"
+        email_label: "E-mail"
+        full_name_label: "Full name"
+        password_label: "Password"
+        minimum_password_length: "(%{password_length} characters minimum)"
+        password_confirmation_label: "Password confirmation"
+        captcha_description: "Let us know you’re human. Enter the captcha below."
+      new_with_provider:
+        head_title: "创建账号"
+    statistics:
+      title: "我的统计"
+      team: "团队"
+      project: "项目"
+      experiment: "实验"
+      protocol: "实验流程"
+    settings:
+      changed_team_flash: "你已经加入 %{team} !"
+      changed_team_error_flash: "操作错误，请重试."
+      changed_team_in_search: "所查找内容不在团队中. 重新到 %{team} 团队!"
+      sidebar:
+        account: "账号"
+        teams: "团队"
+        account_nav:
+          profile: "账号内容"
+          preferences: "使用偏好"
+          addons: "添加项"
+          connected_accounts: "Connected Accounts"
+      account:
+        preferences:
+          head_title: "设置|使用偏好"
+          edit:
+            time_zone_label: "时区"
+            time_zone_sublabel: "时区设定影响所有的时间和日期格式。"
+            time_zone_title: "时区"
+            date_format_label: "日期格式"
+            date_format_sublabel: "日期格式影响所有的日期设定."
+            date_format_title: "日期格式"
+          update_flash: "设定成功更新."
+        addons:
+          head_title: "设计 | Add-ons"
+          title: "Add-ons"
+          no_addons: "You have no SciNote Add-ons."
+          connected_accounts:
+          head_title: "Settings | Connected Accounts"
+          title: "Connected Accounts"
+          not_connected: "You have no Connected accounts"
+          unlink_success: "Sucessfully unlinked"
+          azure_ad:
+            title: "Your Azure AD Account"
+            connect_hint: "Allows you to sign in with your Azure AD account."
+            connected: "Connected"
+            unlink_button: "Unlink"
+            unlink_modal:
+              title: "Unlink Azure AD account?"
+              description_1: "Are you sure you would like unlink Azure AD and SciNote accounts?"
+              submit_button: "Submit"
+          errors:
+            not_found: "You have no Connected accounts for this provider"
+            generic: "Unable to unlink linked account"
+      teams:
+        head_title: "设定 | 团队"
+        breadcrumbs:
+          all: "所有团队"
+          new_team: "新团队"
+          show:
+          enter_description: "Enter Team description"
+        index:
+          description_label: "团队是在同一项目工作的Scinote成员，可分享项目内容."
+          member_of:
+            one: "目前你已加入 %{count} 团队."
+            other: "目前你已加入 %{count} 团队."
+          no_teams: "你未加入任何团队."
+          new_team: "新团队"
+          thead_name: "团队"
+          thead_role: "角色"
+          thead_created_at: "创建于"
+          thead_joined_on: "加入于"
+          thead_members: "成员"
+          na: "n/a"
+          leave: "离开团队"
+        new:
+          name_label: "团队名称"
+          name_placeholder: "我的团队"
+          name_sublabel: "为团队选择名字 (例如 '厦门大学材料系...')."
+          description_label: "描述"
+          description_sublabel: "团队描述."
+          create: "创建"
+        edit:
+          header_created_at: "创建时间:"
+          header_created_by: "创建人:"
+          header_created_by_name_email: "%{name} (%{email})"
+          header_space_taken: "使用空间:"
+          header_no_description: "无描述"
+          name_title: "编辑团队名称"
+          name_label: "名称"
+          description_title: "编辑团队描述"
+          description_label: "描述"
+          team_members_title: "团队成员"
+          add_user: "添加成员"
+          thead_user_name: "姓名"
+          thead_email: "邮箱"
+          thead_joined_on: "加入时间"
+          thead_status: "状态"
+          thead_role: "角色"
+          thead_actions: "任务"
+          user_dropdown:
+            role_label: "用户角色"
+            remove_label: "移除"
+          delete_team_heading: "删除团队"
+          can_delete_message: "该团队可被删除，因目前无任何项目."
+          delete_text: "删除团队."
+          cannot_delete_message_projects: "无法删除，因团队中尚有项目."
+          modal_destroy_team:
+            title: "删除团队。"
+            message: "请确认删除 %{team}? 删除操作不可恢复，团队中所有用户将被删除。"
+            confirm: "删除"
+            flash_success: "%{team} 已成功删除."
+      user_teams:
+        leave_uo_heading: "离开团队 %{team}"
+        leave_uo_message: "确立离开 %{team}? 操作不可恢复."
+        leave_uo_alert_heading: "离开团队将导致以下结果:"
+        leave_uo_alert_line_1: "失去团队所有内容权限 (包括项目, 任务, 步骤 和行动);"
+        leave_uo_alert_line_2: "你作为 <b>管理员</b>的项目将有新的管理员。新管理员由团队管理员指定。"
+        leave_uo_alert_line_3: "库中属于你所有步骤经由团队管理员指定新的管理者;"
+        leave_uo_alert_line_4: "all inventory items in the team added by you will be reassigned onto a new owner from team administrators."
+        leave_uo_confirm: "离开"
+        destroy_uo_heading: "从%{team}中移除用户%{user} "
+        destroy_uo_message: "确认从%{team}中移除用户%{user} ?"
+        destroy_uo_alert_heading: "移除用户将导致以下结果:"
+        destroy_uo_alert_line_1: "用户失去团队所有内容权限 (包括项目, 任务, 步骤 和行动)"
+        destroy_uo_alert_line_2: "用户作为 <b>管理员</b>的项目将有新的管理员。新管理员由团队管理员指定;"
+        destroy_uo_alert_line_3: "库中属于用户的所有步骤经由团队管理员指定新的管理者;"
+        destroy_uo_alert_line_4: "all inventory items in the team added by user will be reassigned onto you."
+        destroy_uo_confirm: "移除"
+        leave_flash: "成功离开 %{team}."
+
+  protocols:
+    protocols_io_import:
+      title_too_long: “内容过长.”
+      too_long: "<span class='label label-warning'>内容过长.</span>"
+      import_description_notice: "步骤描述位于" \"步骤信息\"."
+      preview:
+        description: "步骤描述: "
+        before_start: "步骤描述开始:"
+        warning: "注意事项:"
+        guidelines: "使用指南:"
+        link: "链接:"
+        s_nobr_link: "链接:"
+        s_link: "链接:"
+        s_desc: "Description:"
+        strng_s_desc: "描述:"
+        s_exp_res: "预期结果:"
+        sw_name: "<strong>软件:</strong>"
+        dev: "开发人:"
+        vers: "版本:"
+        repo: "仓库"
+        os: "操作系统 , 版本:"
+        command_name: "<strong>命令:</strong>"
+        sub_prot: "<strong>此步骤包括子步骤:</strong>"
+        safety_info: "<strong>安全信息:</strong>"
+        auth: "作者:"
+        dataset_name: "<strong>数据:</strong>"
+        manuscript_citation: "预稿文献:"
+        published_on: "发布时间:"
+        vendor_name: "供应商名称:"
+        vendor_link: "供应商链接:"
+        keywords: "关键词:"
+        tags: "标签:"
+      comp_append:
+        table_moved: "<br><strong><i>表格放置于 </i></strong>"
+        missing_step: "步骤"
+        missing_desc: "缺乏描述"
+        general_link: "<br>链接: "
+        expected_result: "<br><strong>预期结果: </strong>"
+        soft_packg:
+          name: "<br><strong>软件: </strong>"
+          developer: "<br>开发者: "
+          version: "<br>版本: "
+          link: "<br>链接: "
+          repository: "<br>库: "
+          os: "<br>操作系统 , 版本: "
+        dataset:
+          name: "<br><strong>数据: </strong>"
+          link: "<br>链接: "
+        command:
+          name: "<br><strong>命令: </strong>"
+          description: "<br>描述: "
+          os: "<br>操作系统 , 操作版本: "
+        sub_protocol:
+          title: "<br><strong>此步骤包括子步骤: </strong>"
+          title_html: "<br>作者: "
+          uri: "<br>链接: "
+        safety_infor:
+          body: "<br><strong>安全信息: </strong>"
+          link: "<br>链接: "
+    import_export:
+      load_file_error: "载入步骤失败."
+      import_modal:
+        title_import: "载入步骤"
+        title_import_into_protocol: "从文章载入步骤"
+        title_import_into_protocol_protocols_io: "从protocols.io文件载入步骤"
+        import_into_protocol_message: "覆盖当前步骤!"
+        import_into_protocol_confirm: "确认从文件载入步骤? 将覆盖目前步骤."
+        import_to_linked_task_file: "确认从文件载入步骤? 将覆盖目前步骤."
+        name_label: "步骤名称"
+        authors_label: "作者"
+        description_label: "描述"
+        published_on_label: "Published on"
+        created_at_label: "创建于"
+        updated_at_label: "最新修改于"
+        preview_title: "步骤预览"
+        preview_title_position: " | %{current} 总共 %{total}"
+        assets_header: "文件"
+        import_current: "载入当前"
+        import_all: "载入所有"
+        import: "载入"
+        import_to_team_protocols_label: "Import to Team Protocols"
+        import_to_private_protocols_label: "Import to My Protocols"
+    export:
+      export_results:
+        title: "输出结果"
+        message_failed: " %{nr}输出失败."
+        message_ok: "S%{nr}输出成功."
+        row_success: "已输出"
+        row_failed: "失败"
+    header:
+      created_at: "创建于"
+      updated_at: "最新修改于"
+      added_by: "添加于"
+      keywords: "关键词"
+      authors: "作者"
+      no_authors: "无作者"
+      description: "描述"
+      no_description: "无描述"
+      keywords_modal: "输入关键词, 每个关键词按Enter键确认"
+      edit_name_modal:
+        title: "编辑 %{protocol}名称"
+        label: "名称"
+      edit_keywords_modal:
+        title: "编辑%{protocol}关键词"
+        update_failed: "未能更新关键词."
+      edit_authors_modal:
+        title: "编辑 %{protocol}作者"
+        label: "作者"
+      edit_description_modal:
+        title: "编辑%{protocol}描述"
+        label: "描述"
+    index:
+      head_title: "步骤管理"
+      navigation:
+        public: "团队步骤"
+        private: "我的步骤"
+        external_protocols: "External protocols"
+        archive: "存档"
+      public_description: "团队步骤对所有成员可见."
+      private_description: "我的步骤仅对作者可见."
+      create_new: "新"
+      edit: "编辑"
+      clone_btn: "复制"
+      import: "输入"
+      import_alt: "从SciNote步骤文件(.eln)"
+      import_json: " 从protocols.io文件"
+      modal_import_json_upload: "上传"
+      modal_import_json_title: "上传protocols.io文件"
+      modal_import_json_notice: "上传protocols.io文件"
+      export: "输出"
+      make_private: "转移到我的步骤"
+      publish: "转移到团队步骤"
+      archive_action: "存档"
+      thead_name: "名字"
+      thead_keywords: "关键词"
+      thead_nr_of_linked_children: "链接任务数量"
+      thead_published_by: "发布于"
+      thead_added_by: "添加于"
+      thead_archived_by: "存档于"
+      thead_published_on: "发布于"
+      thead_created_at: "创建于"
+      thead_archived_on: "存档于"
+      thead_updated_at: "最新修改于"
+      preview:
+        title: "%{protocol} 预览"
+      linked_children:
+        title: "任务和 %{protocol}链接"
+        used_in: "链接任务数量: %{nr}"
+        no_linked_children: "此步骤未链接到任何任务."
+      archive:
+        description: "存档步骤仅对你可见. 恢复步骤可将材料恢复到此前位置(团队/用户)."
+      restore: "恢复"
+      make_private_unauthorized: "对选择步骤无转移权限."
+      make_private_error: "转移步骤中发生错误."
+      publish_unauthorized: "对选择步骤无转移权限."
+      publish_error: "转移步骤中发生错误."
+      archive_unauthorized: "对存储步骤无移动权限."
+      archive_error: "存储步骤中发生错误."
+      restore_unauthorized: "对恢复步骤无移动权限."
+      restore_error: "恢复步骤中发生错误."
+      row_renamed_html: "%{old_name}<i> 变更为 </i>%{new_name}"
+      no_protocol_name: "(无名称)"
+      create:
+        title: "创建新步骤"
+        name_label: "步骤名称"
+        name_placeholder: "我的步骤"
+        message_public: "团队步骤对所有成员可见."
+        message_private: "我的步骤仅对用户可见"
+        submit: "创建"
+      clone:
+        success_flash: "成功复制'%{original}'至'%{new}'."
+        error_flash: "复制'%{original}'失败."
+      make_private_results:
+        title: "转移步骤结果"
+        message_failed: "转移%{nr} 至我的步骤失败."
+        message_ok: "转移%{nr} 至我的步骤成功"
+        row_success: "转移到我的步骤"
+        row_renamed: "转移到我的步骤&重命名"
+        row_failed: "失败"
+      publish_results:
+        title: "转移至团队步骤结果"
+        message_failed: "转移%{nr} 至团队步骤失败."
+        message_ok: "转移%{nr} 至团队步骤成功."
+        row_success: "转移到团队步骤"
+        row_renamed: "转移到团队步骤&重命名"
+        row_failed: "失败"
+      import_results:
+        title: "输入结果"
+        message_failed: "未能成功属于%{nr}."
+        message_ok: "成功输入 %{nr} ."
+        message_ok_pio: "从 protocols.io 成功输入."
+        message_warn_truncated: "已从输入. 已将过长文字缩减."
+        row_success: "已输入"
+        row_renamed: "已输入&重命名"
+        row_failed: "已失败"
+        row_file_too_large: "(步骤文件太大)"
+      confirm_archive:
+        title: "存档 "
+        message: "确认激活所选步骤? 所有任务链接将失效."
+        confirm: "存档"
+      archive_results:
+        title: "结果存档"
+        message_failed: "%{nr}存档失败."
+        message_ok: "%{nr}存档成功."
+        row_success: "已存档"
+        row_renamed: "已存档和重命名 renamed"
+        row_failed: "失败"
+        preview: "预览"
+      restore_results:
+        title: "恢复结果"
+        message_failed: "%{nr}恢复结果失败."
+        message_ok: " %{nr}恢复结果成功."
+        row_success: "已恢复"
+        row_renamed: "已恢复 & 重命名"
+        row_failed: "Failed已失败"
+        row_in_repository_public: "%{protocol} - <i>转入团队步骤</i>"
+        row_in_repository_private: "%{protocol} - <i>转入我的步骤</i>"
+      external_protocols:
+        search_bar_placeholder: 'Search for protocols'
+        protocolsio_title: 'Protocols.io'
+        sort_by:
+          title: 'Show first:'
+          alphabetically-asc: 'A-Z'
+          alphabetically-desc: 'Z-A'
+          newest: 'newest'
+          oldest: 'oldest'
+        list_panel:
+          empty_text: 'Search for protocols above to list them here'
+        preview_panel:
+          empty_title: 'PROTOCOL PREVIEW'
+          empty_subtext: 'Click on the protocol in the list to preview it here'
+          banner_text: 'Protocol Preview'
+        import:
+          public: "Team protocols"
+          private: "My protocols"
+          success_flash: 'Protocol <strong>%{name}</strong> successfully imported to %{type}.'
+
+    steps:
+      completed: '已完成'
+      uncompleted: '未完成'
+      expand_label: "展开所有"
+      collapse_label: "收起所有"
+      new_step: "新步骤"
+      subtitle: "实验步骤"
+      no_steps: "实验无步骤."
+      published_on: "发布于 <em>%{timestamp}</em>，发布人 <em>%{user}</em>"
+      info_tab: "信息"
+      comments_tab: "评论"
+      no_description: "此步骤无描述."
+      tables: "表格"
+      files: "Attachments (%{count})"
+      files: "附件 (%{count})"
+      empty_checklist: "无类目"
+      comment_title: "%{user} at %{time}:"
+      options:
+        up_arrow_title: "上移一步"
+        down_arrow_title: "下移一步"
+        comment_title: "评论"
+        no_comments: "无评论"
+        new_comments: "新评论"
+        edit_title: "编辑步骤"
+        delete_title: "删除步骤"
+        duplicate_title: "复制步骤"
+        complete_title: "完成步骤"
+        uncomplete_title: "未完成步骤"
+     attachments:
+        modified_label: "Modified:"
+        sort:
+          new_html: "Newest first &#8595;"
+          old_html: "Oldest first &#8593;"
+          atoz_html: "Name &#8595;"
+          ztoa_html: "Name &#8593;"
+      new:
+        add_step_title: "添加新步骤"
+        tab_checklists: "检查清单"
+        tab_assets: "文件"
+        tab_tables: "表格"
+        add_step: "添加"
+        name: "步骤名"
+        name_placeholder: "材料名称"
+        description: "描述"
+        description_placeholder: "列出所需完成任务 ..."
+        checklist_panel_title: "检查清单"
+        checklist_name: "检查清单名字"
+        checklist_name_placeholder: "检查清单名字"
+        checklist_items: "类目"
+        checklist_item_placeholder: "任务"
+        checklist_add_item: "添加类目"
+        add_checklist: "添加清单"
+        table_panel_title: "表格"
+        table_name: "表格名"
+        table_name_placeholder: "表格名"
+        add_table: "添加表格"
+        asset_panel_title: "文件"
+        add_asset: "添加文件"
+      edit:
+        edit_step_title: "编辑步骤"
+        edit_step: "保存"
+      destroy:
+        confirm: "确认删除步骤%{step}?"
+        success_flash: "成功删除步骤 %{step}."
+        error_flash: "步骤%{step}不能被删除. 一个或多个文件被锁定."
+    edit:
+      head_title: "编辑步骤"
+    no_keywords: "无关键词"
+
+  invite_users:
+    to_team:
+      title: "邀请用户到 %{team}"
+      heading: "邀请更多用户到 %{team} 开始使用SciNote."
+    no_team:
+      title: "邀请用户到 SciNote"
+      heading: "邀请更多用户加入 SciNote."
+    input_subtitle: "属于一个或多个邮件, 按ENTER键确认每个邮件."
+    invite_to_team_heading: "邀请用户到我的团队:"
+    invite_btn: "邀请用户"
+    invite_guest: "作为访客"
+    invite_user: "一般用户"
+    invite_admin: "作为管理员"
+    errors:
+      recaptcha: "reCAPTCHA 认证失败, 请重试"
+    results:
+      heading: "邀请结果:"
+      user_exists: "被邀请人已经加入 SciNote."
+      user_exists_unconfirmed_invited_to_team: "用户已经注册，等待确认。成功邀请用户作为 %{role}加入 %{team} ."
+      user_exists_and_in_team: "用户已经注册，等待确认。成功邀请用户作为 %{role}加入 %{team} ."
+      user_exists_invited_to_team: "用户已经注册，等待确认。成功邀请用户作为 %{role}加入 %{team} ."
+      user_created: "邀请成功."
+      user_created_invited_to_team: "成功邀请用户作为 %{role}加入 %{team}."
+      user_invalid: "邮箱无效."
+      too_many_emails: "邮箱过多"
+
+  time:
+    formats:
+      full_js: "D.M.YYYY HH:mm"
+      full: "%{date_format} %H:%M"
+      full_with_tz: "%{date_format} %H:%M %z"
+      full_with_comma: "%{date_format}, %H:%M"
+      full_date: "%{date_format}"
+      time: "%H:%M"
+      short: "%H"
+
+  notifications:
+    title: "通知"
+    email_settings: "邮件通知"
+    form:
+      assignments: "分配"
+      notification_scinote: '在SCINOTE中显示'
+      notification_email: '邮件通知我'
+      assignments_description: '当你被分配到团队、仙姑、任务是，显示通知.'
+      recent_notification: '最近变动'
+      recent_notification_description: '当你所负责任务有变动时，你会收到通知.'
+      system_message: "新消息 in SciNote"
+      system_message_description: '你将收到SCINOTE升级的通知.'
+    deliver:
+      download_link: "下载链接:"
+      download_text: "点击链接下载文件."
+      email_subject: "输出准备就绪!"
+      email_body_1: "数据输出准备就绪!"
+      email_body_2: "你的输出文件可以点击以下链接下载，链接在7天后失效."
+    show_all: "显示所有通知"
+    show_more: "显示更多"
+    no_notifications: "无通知."
+    no_recent: "最近无通知."
+    types:
+      assignment: "分配"
+      recent_changes: "最近变化"
+      system_message: "SCINOTE 系统信息"
+      deliver: '可输出内容'
+    experiment_annotation_title: "%{user} 在 %{experiment}实验中提到你."
+    experiment_annotation_message_html: "项目: %{project} | 实验: %{experiment}"
+    project_comment_annotation_title: "%{user} 在 %{project}项目中提到你."
+    project_annotation_message_html: "项目: %{project}"
+    my_module_comment_annotation_title: "%{user} 在 %{my_module}任务中提到你."
+    my_module_annotation_message_html: "项目: %{project} | 实验: %{experiment} | 任务: %{my_module}"
+    step_comment_annotation_title: "%{user} 在 %{step}的评论中提到你."
+    step_description_title: "%{user} 在 %{step}的评论中提到你."
+    checklist_title: "%{user} 在 %{step}的检查清单提到你."
+    step_annotation_message_html: "项目: %{project} | 实验: %{experiment} | 任务: %{my_module} | 步骤: %{step}"
+    result_annotation_title: "%{user} 在 %{result}中提到你."
+    result_comment_annotation_title: "%{user} 在 %{result}的评论中提到你."
+    result_annotation_message_html: "项目: %{project} | 实验: %{experiment} | 任务: %{my_module}"
+    sample_annotation_title: "%{user} 在 %{column} 的  %{sample} 样品提到你"
+    sample_annotation_message_html: "样品: %{sample} | 栏目: %{column}"
+    repository_annotation_title: "%{user} %{repository}在 %{column} 的 %{record} 提到你 "
+    repository_annotation_message_html: "类目: %{record} | 栏目: %{column}"
+    protocol_step_annotation_message_html: "步骤: %{protocol}"
+    email_title: "你收到一个通知!"
+    assign_user_to_team: "<i>%{assigned_user}</i> 作为 %{role} 加入 <strong>%{team}</strong>。操作人 <i>%{assigned_by_user}</i>."
+    unassign_user_from_team: "<i>%{unassigned_user}</i> 从 <strong>%{team}</strong> 中移除。操作人 <i>%{unassigned_by_user}</i>."
+    task_completed: "%{user} 完成任务 %{module}. %{date} | 项目: %{project} | 实验: %{experiment}"
+    start_work_on_next_task: "<i>%{user}</i> 完成任务 <strong>%{module}</strong>. 可进入下一个任务."
+    start_work_on_next_task_message: "项目: %{project} | 实验: %{experiment} | 任务: %{my_module}"
+
+  assets:
+    head_title:
+      edit: "SciNote | %{file_name} | 编辑"
+      view: "SciNote | %{file_name} | 浏览"
+    drag_n_drop:
+      label_html: '拖动 &amp; 放置此处. 复制 &amp 粘贴 images.'
+      browse_label: '选择文件上传...'
+      drop_label: '放置添加步骤'
+      file_label: '文件'
+    from_clipboard:
+      modal_title: 'Add image from clipboard'
+      image_preview: 'Image preview'
+      add_image: 'Add'
+      file_name: 'File name'
+      file_name_placeholder: 'Image'
+    placeholder:
+      modified_label: "Modified:"
+    wopi_supported_text_formats_title: 'Only .docx, .docm, .odt file formats are supported for editing in Word Online.'
+    wopi_supported_table_formats_title: 'Only .xlsx, .xlsm, .xlsb, .ods file formats are supported for editing in Excel Online.'
+    wopi_supported_presentation_formats_title: 'Only .pptx, ppsx, .odp file formats are supported for editing in Powerpoint Online.'
+    create_wopi_file:
+      button_text: 'New Office file'
+      modal_title: 'Create new Microsoft Office Online document'
+      text_field_label: 'Document name & type'
+      text_field_placeholder: 'New Document'
+      ms_word: 'Word<br/>Online'
+      ms_excel: 'Excel<br/>Online'
+      ms_powerpoint: 'PowerPoint<br/>Online'
+      create_document_button: 'Create Document'
+      errors:
+        forbidden: 'You do not have permission to add files.'
+        not_found: 'Element not found.'
+  atwho:
+    no_results: "未找到结果"
+    users:
+      title: "人员"
+      navigate_1: "上/下"
+      navigate_2: "浏览"
+      confirm_1: "Enter/tab"
+      confirm_2: "确认"
+      dismiss_1: "esc"
+      dismiss_2: "取消"
+      popover_html: "<span class='silver'>Team:</span>&nbsp;%{team} <br> <span class='silver'>职责:</span>&nbsp;%{role} <br> <span class='silver'>Joined:</span>&nbsp;%{time}"
+    res:
+      archived: "(已存档)"
+      removed: "(已移除)"
+      deleted: "(已删除)"
+
+  dropdown_selector:
+    nothing_found: "Nothing found..."
+
+  create_task_service:
+    default_task_name: "New Task"
+
+  zip_export:
+    modal_label: '输出清单'
+    notification_title: '请求输出资料已准备完毕!'
+    expired_title: '你的链接已过期.'
+    expired_description: '重新输出得到一个新链接.'
+    modal_label: '输出请求收到'
+    modal_html: "<p>你的输出请求正在处理中.</p><p>处理完毕后， <strong>下载链接将发送到邮箱%{email}</strong>  链接收到后7日内有效.</p>"
+    repository_header_html: '输出在 %{repository}选择类目.'
+    files_alert: '在清单中上传的文件将只输出文件名.'
+    repository_footer_html: '清单输出为.csv格式. <strong>下载链接</strong> 将发送至邮箱.'
+    export_error: "输出文件发生错误."
+
+  # This section contains general words that can be used in any parts of
+  # application.
+  tiny_mce:
+    upload_window_title: 'Insert an image from your computer'
+    upload_window_label: 'Choose an image'
+    choose_file: 'Choose file'
+    no_image_chosen: 'No image chosen'
+    unsupported_image_format: 'Unsupported image format'
+    insert_btn: 'Insert'
+    error_message: 'You must choose a file'
+    server_not_respond: "Didn't get a response from the server"
+    saved_label: "Saved"
+    leaving_warning: "You have made some changes, are you sure you want to leave this page?"
+    older_version_available: "Older version of the text below has been saved in the browser. Do you want to restore it?"
+    newer_version_available: "Newer version of the text below has been saved in the browser. Do you want to restore it?"
+  general:
+    save: "Save"
+    update: "Update"
+    edit: "Edit"
+    cancel: "Cancel"
+    save: "Save"
+    close: "Close"
+    create: 'Create'
+    no_comments: "No comments!"
+    more_comments: "More comments"
+    comment_placeholder: "Your Message"
+    comment_placeholder_new: "Add new comment…"
+    archived: "Archived"
+    sort:
+      new_html: "Newest first &#8595;"
+      old_html: "Oldest first &#8593;"
+      atoz_html: "Name &#8595;"
+      ztoa_html: "Name &#8593;"
+    module:
+      one: "任务"
+      other: "任务"
+    public: "公开"
+    private: "私有"
+    view: "View"
+    search: "搜索"
+    file:
+      choose: "选择文件"
+      no_file_chosen: "无文件选择"
+      processing: "文件处理中.处理完毕后下载。"
+      total_size: "一次最多上传 %{size} MB 文件. 请移除一个或多个文件后再上传."
+      size_exceeded: "文件须小于 %{file_size} MB."
+      blank: "没有选择任何文件"
+      uploading: "如果离开此也, 正在上传文件将丢失! 确认继续?"
+      upload_failure: "上传错误，请联系系统管理员."
+      file_name_too_long: 'is too long (maximum is %{limit} characters, with extension)'
+    text:
+      not_blank: "不能为空白"
+      length_too_long_general: "过长"
+      length_too_long: "i过长(长度限制 %{max_length} characters)"
+      length_too_short: "过短 (最短 %{min_length} )"
+    query:
+      wrong_query: "搜索字节过短 (最短 %{min_length})或过长(最长 %{max_length})"
+      length_too_long: "搜索字节过长 (最长 %{max_length})"
+      length_too_short: "搜索字节过短 (最短 %{min_length})"
+    busy: "你的请求正在处理中. 如离开此页，所有改变将丢失，确认离开？"
+    no_name: "(无名字)"
+    error: "错误发生，请稍后重试."
+    filter: "过滤":"
+    filter_dots: "Filter..."
+    no_teams:
+      title: "面板为空!"
+      text: "目前未加入任何团队."
+
+  api:
+    core:
+      status_ok: "Ok"
+      expired_token: "Token过期"
+      invalid_token: "Token无效"
+      missing_token: "头部无Token"
+      no_iss: "识别码无ISS"
+      wrong_iss: "Default: Token中错误ISS"
+      no_user_mapping: "Default: 没有发现用户"
+      no_azure_user_mapping: "Azure AD: 没有发现用户"
+      errors:
+        general:
+          title: "错误"
+          detail: "错误发生, 请联系管理员"
+        parameter:
+          title: "参数缺乏"
+        validation:
+          title: "验证错误"
+        read_permission:
+          title: "权限拒绝"
+          detail: "无接触 %{model}权限"
+        create_permission:
+          title: "权限拒绝"
+          detail: "无创建 %{model}权限"
+        manage_permission:
+          title: "权限拒绝"
+          detail: "无管理%{model}权限"
+        record_not_found:
+          title: "无记录"
+          detail: "%{model} 中 %{id} 不存在"
+        id_mismatch:
+          title: "对象 ID 不匹配"
+          detail: "对象中ID的URL和请求不匹配"
+        type:
+          title: "错误模型"
+          detail: "参数中对象错误"
+        inventory_column_type:
+          detail: "数据属性更新错误"
+        result_missing_tinymce:
+          detail: "文字和参照系统不匹配"
+        result_wrong_tinymce:
+          detail: "未发现文字中对象"
+
+
+  Add: "添加"
+  Asset: "文件"
+  Assets: "文件"
+  Download: "下载"
+  Edit: "编辑"
+  Save: "保存"
+  SaveClose: "保存&关闭"
+  Module: "任务"
+  Modules: "任务"
+  Project: "项目"
+  Projects: "项目"
+  Experiment: "实验"
+  Result: "结果"
+  Results: "结果"
+  Protocol: "步骤"
+  Protocols: "步骤"
+  Checklist: "检查清单"
+  Checklists: "检查清单"
+  Table: "表格"
+  Tables: "表格"
+  Sample: "样品"
+  Samples: "样品"
+  Repositories_team: "清单 - %{team}"
+  Reports: "报告"
+  Comments: "评论"
+  Step: "步骤"
+  Steps: "步骤"
+  Tag: "标签"
+  Tags: "标签"
+  Workflow: "工作流"
+  Workflows: "工作流"
+  More: "更多"
+  Added: '已添加'
+  by: '于'
+
+  client_api:
+    permission_error: "无权限执行操作."
+    invalid_arguments: "变量无效"
+    generic_error_message: "发生错误! 请重试."
+    user_teams:
+      permission_error: "无管理用户权限."
+      leave_team_error: "发生错误."
+      leave_flash: "已离开 %{team}."
+    teams:
+      create_permission_error: "无创建团队权限."
+      update_permission_error: "无编辑团队权限."
+    user:
+      current_password_invalid: "密码无效"
+      password_confirmation_not_match: "密码不一致"
+    invite_users:
+      permission_error: "无邀请用户权限. 请联系管理员."
+
+ marvinjs:
+    new_sketch: "New Chemical Drawing"
+    new_button: "Create Chemical Drawing"
+    structure_placeholder: "Click here to enter Chemical Drawing name"
+    modal_name_title: "Chemical Drawing name:"
+    checmical_drawing: "Chemical drawings"

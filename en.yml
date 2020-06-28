@@ -1,0 +1,2413 @@
+en:
+  devise:
+    confirmations:
+      new:
+        head_title: "重新发送确认"
+        title: "重新发送确认"
+        submit: "重新发送确认"
+    invitations:
+      edit:
+        header: "输入全名和密码"
+    passwords:
+      edit:
+        head_title: "修改密码"
+        title: "修改密码"
+        password: "输入新密码"
+        password_length: "(%{min_length} 最少字节)"
+        password_confirm: "确认密码"
+        submit: "修改密码"
+      new:
+        head_title: "忘记密码"
+        title: "忘记密码?"
+        submit: "重设密码"
+    registrations:
+      password_changed: "密码成功修改."    
+    sessions:
+      new:
+        head_title: "登陆"
+        title: "登陆"
+        or: "或"
+        email_field: "电子邮箱"
+        email_placeholder: "john.doe@email.com"
+        password_field: "Password"
+        password_placeholder: "输入密码"
+        remember_me: "请记住我"
+        submit: "登陆"
+      create:
+        team_name: "%{user}的项目"
+      auth_token_create:
+        wrong_credentials: "自动登陆失败."
+    unlocks:
+      new:
+        head_title: "重新发送解锁帮助"
+        title: "重新发送解锁帮助"
+        submit: "重新发送解锁帮助"
+    links:
+      login: "登录"
+      login_with_provider: "用SCinote账户登陆"
+      signup: "创建账户"
+      forgot: "忘记密码"
+      not_receive_confirmation: "没有收到邮件?"
+      not_receive_unlock: "没有收到邮件?"
+      sign_in_provider: "%{provider}登陆"
+    linkedin:
+      provider_name: "wechat"
+      complete_sign_up: "你必须创建账号"
+      email_already_taken: "%{email} 账号已经存在"
+      failed_to_save: "创建失败"
+    azure:
+      provider_name: "Azure 目录"
+      errors:
+        generic: "登入失败"
+        no_local_user_map: "No local user record found"
+        no_email: "Email is missing in auth token"
+        failed_to_save: "Failed to create new user"
+
+  doorkeeper:
+    authorizations:
+      buttons:
+        authorize: "授权"
+      new:
+        head_title: "OAuth 授权"
+        title: "授权 %{client_name} 和当前账号相连"
+        scopes_title: "将和:"
+        scope_1: "使用账号的基本信息"
+        scope_2: "创建, 读取, 更新, 和 删除 数据 within SciNote on behalf of your user account using SciNote API."
+        terms: "%{client_name} 条款适用."
+
+  activerecord:
+    errors:
+      models:
+        project:
+          attributes:
+            name:
+              taken: "项目名称必须为唯一 (包括以前项目)."  
+        view_state:
+          attributes:
+            viewable_id:
+              nnot_unique: "用户名和母项目已经存在"
+            state:
+              wrong_state: "参数错误"
+        team_repository:
+          attributes:
+            team_id:
+              same_team: "Inventory can't be shared to the same team as it belongs to"
+        my_module:
+          attributes:
+            position:
+             not_unique: "X and Y position has already been taken by another task in the experiment."
+        asset:
+          attributes:
+            file:
+              too_big: "is too big"
+        repository_snapshot:
+          attributes:
+            selected:
+              already_taken: "Task already has selected snapshot"
+        repository_list_item:
+          attributes:
+            base:
+              per_column_limit: "Too many items in the column"
+        repository_checklist_item:
+          attributes:
+            base:
+              per_column_limit: "Too many items in the column"
+
+  helpers:
+    label:
+      team:
+        name: "团队名称"
+      user:
+        full_name: "姓名"
+        initials: "简称"
+        avatar: "头像"
+
+
+  head:
+    title: "SciNote | %{title}"
+
+  body:
+    notice: "此应用需运行JavaScript."  
+  nav:
+    team_switch_title: "变更团队"
+    search: "搜索..."
+    search_button: '开始!'
+    user_greeting: "你好, %{full_name}"
+    advanced_search: "高级搜索"
+    title: "LabNote"
+    academy_tooltip: "SciNote Academy"
+    user:
+      settings: "设置"
+      logout: "退出"
+    activities:
+      none: "无行动!"
+    label:
+      scinote: "SciNote"
+      dashboard: "目录"
+      projects: "家页"
+      protocols: "实验方案"
+      calendar: "日历"
+      activities: "过程"
+      repositories: "库存"
+      teams: "团队"
+      search: "搜索"
+      notifications: "通知"
+      info: "信息"
+      account: "账户"
+
+  about:
+    modal_title: "关于TeamNote"
+    core_version: "TeamNote 核心版"
+    addon_versions: "高级功能"
+
+  left_menu_bar:
+    dashboard: "目录"
+    projects: "项目"
+    repositories: "清单"
+    templates: "方案"
+    reports: "报告"
+    settings: "设置"
+    activities: "活动"
+    academy: "学术院"
+    support: "技术支持"
+    support_links:
+      support: "支持中心"
+      tutorials: "指导视频"
+      core_version: "SciNote Core ver. %{version} |"
+      about: "关于"
+
+  sidebar:
+    title: "导航栏"
+    branch_expand: "展开"
+    branch_collapse: "收起"
+    no_module_group: "无工作流"
+
+  nav2:
+    all_projects:
+      index: "进行中项目"
+      archive: "已完成项目"
+      all: "所有项目"
+    projects:
+      show: "实验"
+      samples: "物料"
+      activities: "进程"
+      reports: "报告"
+      archive: "已存档实验"
+    experiments:
+      canvas: "任务"
+      archive: "已完成任务"
+    modules:
+      steps: "步骤"
+      results: "结果"
+      activities: "进程"
+      samples: "样品"
+      repositories: "清单"
+      archive: "已存档结果"
+
+  search:
+    whole_word: "匹配任何一个词"
+    whole_phrase: "匹配所有词"
+    match_case: "区分大小写"
+    index:
+      head_title: "搜索"
+      page_title: "搜索"
+      results_title_html: "'<em>%{query}</em>'的搜索结果"
+      public: "公开"
+      private: "私有"
+      archived: "已存档"
+      created_by: "创建者: "
+      created_at: "创建时间: "
+      last_modified_by: "上次修改人: "
+      last_modified_at: "上次修改时间: "
+      keywords: "关键词: "
+      authors: "作者: "
+      description: "描述: "
+      no_description: "无描述"
+      team: "团队: "
+      repository: "物料单: "
+      repository_row: "物料: "
+      project: "项目: "
+      experiment: "实验: "
+      protocol: "方案: "
+      modules: "任务: "
+      tag_no_modules: "未添加到任务中"
+      sample_no_modules: "无任务分配"
+      module: "任务: "
+      step: "步骤: "
+      result: "结果: "
+      no_name: "(无名称)"
+      error:
+        no_results: "%{q}没有结果."
+      samples:
+        sample: "样品: "
+        sample_type: "类型: "
+        no_sample_type: "无类型"
+        sample_group: "种类: "
+        no_sample_group: "无种类"
+        added_on: "添加时间: "
+        added_by: "添加人: "
+        custom_field: "%{cf}: "
+      repositories:
+        repository_row: "物料清单: "
+        added_on: "添加时间: "
+        added_by: "添加人: "
+        custom_column: "%{column}: "
+        no_modules: "未分配任务"
+      comments:
+        project: "项目评论"
+        my_module: "任务评价"
+        step: "步骤评价"
+        result: "结果评价"
+
+  comments:
+    options_dropdown:
+      header: "评论"
+      edit: "编辑"
+      delete: "删除"
+    delete_confirm: "确认删除评论?"
+    delete_error: "删除过程发送错误."
+
+  projects:
+    index:
+      head_title: "家页"
+      archive: "存档"
+      archived: "已存档"
+      active: "执行中项目"
+      hidden: "项目成员可见"
+      visible: "所有成员可见"
+      no_projects:
+        text: "目前无进行中项目."
+        title: "创建项目"
+        create_new_button: "创建新项目"
+        no_permission_title: "无创建项目权限. 请联系团队管理员."
+      new: "新项目"
+      visibility_private: "仅对项目成员可见."
+      visibility_public: "所有成员可见."
+      user_project: "%{user} 加入时间 %{timestamp}."
+      no_activities: "无进行中活动!"
+      no_comments: "没有评论!"
+      no_users: "没有用户!"
+      manage_users: "用户管理"
+      no_notifications: "目前无过截止日期任务"
+      module_overdue_html: "任务 <em>%{module}</em> 已过期 (%{days})."
+      module_overdue_days:
+        one: "1 个工作日"
+        other: "%{count} 工作日"
+      module_one_day_due_html: "任务 <em>%{module}</em> 在1天内截止."
+      user_role: "职责: "
+      user_full_name: "成员: "
+      edit_user: "编辑职责"
+      delete_user: "移除用户"
+      delete_user_confirm: "确认将用户 %{user} 从项目%{project}移除?"
+      team_filter: "显示项目"
+      all_filter: "全部"
+      start_date: "开始日期:"
+      activity_tab: "进行中"
+      users_tab: "用户"
+      notifications_tab: "截止日期"
+      comment_tab: "评论"
+      new_comment: "新评论"
+      content_loading: "载入中"
+      edit_option: "编辑"
+      archive_option: "存档"
+      archive_confirm: "确定将项目移入档案?"
+      restore_option: "恢复"
+      ooptions_header: "选项"
+      comment_placeholder: "你的留言"
+      more_comments: "更多评论"
+      modal_new_project:
+        modal_title: "创建新项目"
+        create: "创建"
+        name: "项目名称"
+        name_placeholder: "我的项目"
+        team: "团队"
+        visibility: "可见成员:"
+        visibility_hidden: "只对项目成员开放"
+        visibility_visible: "所有成员可见"
+      modal_edit_project:
+        modal_title: "编辑项目 %{project}"
+        submit: "保存"
+      modal_manage_users:
+        modal_title_html: "管理用户 <span id='manage-users-modal-project'>%{name}</span>"
+        no_users: "无用户!"
+        create: "添加"
+        select_user_role: "用户职责"
+        invite_users_link: "邀请用户"
+        invite_users_details: "加入团队 %{team}."
+        contact_admins: "如邀请其他成员加入 %{team}, 请联系项目管理员."
+    export_projects:
+      export_button: "输出项目"
+      error_title: "操作被拒绝"
+      error_text_p1_html: "你的输出已经达到每日上限. 每日输出 <strong>限制在 %{limit} 请求/天 </strong>- 目前无请求额度剩余."
+      error_text_p2_html: "请在 <strong>明天</strong>提出请求, 你的每日额度将恢复至%{limit} 次."
+      modal_title: "项目输出"
+      modal_text_p1_html: "你将输出 <strong>%{num_projects} 项目 属于 %{team}</strong> 团队. 项目将以.zip形式存储. 取决于文件大小和网络速度，输出时间在5分钟到数小时."
+      modal_text_p2_html: "输出文件下载链接将发送到您邮箱。为安全考虑，收到邮件7天后，链接将无效."
+      modal_text_p3_html: "输出文件请求限制在每天%{limit}次。 确认本次输出后，本日您还有%{num}输出."
+      modal_submit: "输出"
+      success_flash: "收到输出请求。你的请求正在处理中。"
+    table:
+      status: "状态"
+      name: "项目名"
+      start: "开始时间"
+      visibility: "可见"
+      users: "用户"
+      experiments: "实验"
+      tasks: "任务"
+    activity:
+      visibility_hidden: "项目成员可见"
+      visibility_visible: "所有团队成员"
+    create:
+      success_flash: "项目 <strong>%{name}</strong> 成功创建."
+    update:
+      success_flash: " <strong>%{name}</strong> 成功更新."
+      error_flash: "项目 <strong>%{name}</strong> 更新失败."
+    archive:
+      success_flash: "项目 <strong>%{name}</strong> 成功 存档."
+      error_flash: "项目 <strong>%{name}</strong> 存档未成功."
+    restore:
+      success_flash: "项目 <strong>%{name}</strong> 成功恢复."
+      error_flash: "项目 <strong>%{name}</strong> 未成功恢复."
+    show:
+      head_title: "%{project}"
+    samples:
+      head_title: "%{project} | 清单样本"
+    reports:
+      print_title: "%{project} | 报告"
+      index:
+        head_title: " 报告"
+        new: "新报告"
+        edit: "编辑"
+        delete: "删除"
+        deleted: "已删除"
+        thead_project_name: "项目名称"
+        thead_name: "报告名称"
+        thead_created_by: "创建者"
+        thead_last_modified_by: "修改于"
+        thead_created_at: "创建于"
+        thead_updated_at: " 更新于"
+        no_reports: "无报告!"
+        modal_new:
+          projects: "项目"
+          head_title: "创建新项目"
+          no_projects: "目前无项目."
+          message: "创建新报告. 请选择需要创建报告的项目."
+          create: "创建"
+        modal_delete:
+          head_title: "删除报告"
+          message: "确认删除?"
+          delete: "删除"
+      new:
+        head_title: "%{project} | 新报告"
+        nav_title: "报告内容 "
+        nav_print: "打印"
+        nav_download: "下载"
+        nav_pdf: "PDF格式报告"
+        nav_docx: "DOCX格式报告"
+        save_PDF_to_inventory: "存储PDF"
+        nav_save: "存储"
+        nav_close: "取消"
+        nav_sort_by: "排序"
+        nav_sort_asc: "最旧优先"
+        nav_sort_desc: "最新优先"
+        nav_sort: "排序"
+        sidebar_title: "浏览"
+        global_sort: "整个报告排序将取消此前所有排序。继续执行？"
+        unsaved_work: "确认离开? 所有未保存数据将丢失."
+        no_content_for_PDF_html: "<h1>无内容</h1>"
+        no_permissions: "没有管理该栏的权限"
+        save_PDF_to_inventory_modal:
+          description_one: "你可以将PDF报告存在Here you can save PDF report to an inventory item."
+          description_two: "请按照清单, 栏目、和项目选择次序储PDF报告. 注意栏目需要为 \"file\"类型."
+          inventory: "选择清单:"
+          inventory_column: "选择栏目:"
+          inventory_item: "选择项目:"
+          no_inventories: "无存储清单执行."
+          success_flash: "报告存储成功."
+          asset_present_warning_html: "选择项目已经有文件. 点击存储后替换文件: <ul><li>被替换文件将被彻底删除;</li><li>新文件将被存入项目.</li></ul>"
+          no_items: "选择清单无项目. 添加第一个项目。"
+          here: "此处"
+          no_columns: "选择清单无栏目. 添加文件栏目到清单."
+          nothing_selected: "无项目选择"
+      elements:
+        modals:
+          project_contents:
+            head_title: "在报告中加入内容"
+            tasks_tab: "选择任务"
+            content_tab: "选择内容"
+          project_contents_inner:
+            instructions: "你可以选择一个或多个实验."
+            no_modules: "项目无内容"
+            no_module_group: "无工作安排"
+          module_contents:
+            head_title: "添加内容至 %{module}"
+            module_tab: "任务内容"
+            steps_tab: "方案内容"
+            results_tab: "结构内容"
+          module_contents_inner:
+            instructions: "在报告中添加相关内容."
+            check_all: "所有任务内容"
+            protocol: "方案"
+            steps: "步骤"
+            completed_steps: "已完成"
+            uncompleted_steps: "未完成"
+            no_steps: "任务无步骤"
+            results: "结果"
+            result_assets: "文件"
+            result_tables: "表格"
+            result_texts: "文字"
+            no_results: "无结果"
+            activity: "进展"
+            samples: "样品"
+          experiment_contents:
+            head_title: "添加内容到实验 %{experiment}"
+            experiment_tab: "实验内容"
+            module_tab: "任务内容"
+            steps_tab: "步骤"
+            results_tab: "结果内容"
+          experiment_contents_inner:
+            instructions: "选择报告中包括任务"
+            no_modules: "实验中无任务"
+          step_contents:
+            head_title: "添加步骤内容 %{step}"
+            step_tab: "步骤内容"
+            results_tab: "结果"
+          step_contents_inner:
+            instructions: "从任务/步骤中选择报告需包括的内容。"
+            check_all: "选择所有步骤"
+            tables: "表格"
+            no_tables: "步骤中不含表格"
+            assets: "文件"
+            no_assets: "步骤中没有已上传文件"
+            checklists: "检查清单"
+            no_checklists: "步骤中没有检查清单"
+            comments: "评论"
+          result_contents:
+            head_title: "在结果中添加内容 %{result}"
+          result_contents_inner:
+            instructions: "报告中包括结果和评论?"
+            check_all: "所有结果"
+            comments: "评论"
+          add: "添加"
+          save_report:
+            head_title: "储存报告"
+            name: "报告题目"
+            name_placeholder: "实验报告"
+            description: "内容简述"
+            description_placeholder: "报告内容关于..."
+            save: "存储"
+        all:
+          sort_asc: "从最早排序"
+          sort_desc: "从最新排序"
+          move_up: "上移"
+          move_down: "下移"
+          remove: "从报告中删除"
+          scinote_link: "SciNote链接"
+        new_element:
+          title: "添加新元素"
+        project_header:
+          user_time: "项目创建于%{timestamp}."
+          title: " %{project}项目报告"
+        module:
+          user_time: "任务创建于 %{timestamp}."
+          started_on: "开始日期: %{started_on}"
+          no_start_date: "无开始日期"
+          due_date: "截止日期: %{due_date}"
+          no_due_date: "无截止日期"
+          no_description: "无描述"
+          tags_header: "任务标签:"
+          no_tags: "无标签"
+          protocol:
+            user_time: "方案创建于 %{timestamp}."
+        experiment:
+          user_time: "实验创建于%{timestamp}."
+          no_description: "无描述"
+          no_tags: "无标签"
+        module_activity:
+          name: "任务行动%{my_module}"
+          sidebar_name: "行动"
+          no_activity: "无行动"
+        module_samples:
+          name: "任务样品%{my_module}"
+          sidebar_name: "样品"
+          no_samples: "无样品"
+        module_repository:
+          name: "%{repository} 中任务 %{my_module}"
+          table_name: "[ %{name} ]"
+          no_items: "无项目"
+        result_asset:
+          file_name: "[ %{file} ]"
+          user_time: "%{user}上传于%{timestamp}"
+        result_table:
+          table_name: "[ %{name} ]"
+          user_time: "%{user}创建于%{timestamp}."
+        result_text:
+          user_time: "%{user}创建于%{timestamp}."
+        step:
+          sidebar_name: "步骤 %{pos}: %{name}"
+          step_pos: "步骤 %{pos}:"
+          no_description: "无描述"
+          completed:
+            user_time: "%{user}完成于%{timestamp}."
+          uncompleted:
+            user_time: "%{user}创建于 %{timestamp}."
+        step_table:
+          table_name: "[ %{name} ]"
+          user_time: "表格创建于 %{timestamp}."
+        step_asset:
+          sidebar_name: "文件%{file}"
+          file_name: "[ %{file} ]"
+          user_time: "文件上传于%{timestamp}."
+        step_checklist:
+          checklist_name: "[ %{name} ]"
+          user_time: "检查清单创建于%{timestamp}."
+          checked: "已检查"
+        result_comments:
+          sidebar_name: "评论"
+          name: "%{result}结果评论"
+          no_comments: "无评论"
+          comment_prefix: "%{user} 于%{date} %{time}:"
+        step_comments:
+          sidebar_name: "评论"
+          name: "关于%{step}的评论"
+          no_comments: "无评论"
+          comment_prefix: "%{user} 于 %{date} %{time}:"
+    experiment_archive:
+      head_title: "%{project} | 存档实验"
+      no_archived_experiments: "无存档实验!"
+      restore_option: "恢复"
+      archived_on: "存档于"
+      created_on: "创建于"
+      last_modified_on: "最新一次修改"
+      archived_on_title: "实验存档于%{date} %{time}."
+      created_on_title: "实验创建于 %{date} %{time}."
+      last_modified_on_title: "实验最新一次修改于 %{date} %{time}."
+
+  user_teams:
+    enums:
+      role:
+        guest: "游客"
+        normal_user: "成员"
+        admin: "管理员"
+
+  user_projects:
+    enums:
+      role:
+        owner: "管理员"
+        normal_user: "用户"
+        technician: "技术员"
+        viewer: "只阅"
+    edit:
+      update_role: "权限变更"
+    create:
+      select_user_role: "请选择用户权限."
+      add_user_generic_error: "用户设定有误"
+      can_add_user_to_project: "无法在项目中加入用户."
+
+  my_modules:
+    details:
+      title: "内容"
+      info_popover:
+        project_label: "项目"
+        experiment_label: "实验"
+        creator_label: "创建人"
+        creator_same_user_label: "(自建)"
+        created_label: "已创建"
+        modified_label: "已修改"
+        modified_value: "%{date} 创建 %{full_name}"
+        modified_value_without_user: "%{date}"
+      start_date: "开始日期:"
+      no_start_date_placeholder: "+ 添加开始日期"
+      due_date: "截止日期:"
+      no_due_date_placeholder: "+ 添加截止日期"
+      assigned_users: "负责人:"
+      no_assigned_users: "+ 添加负责人"
+      tags: "标签:"
+      no_tags: "+ 添加标签"
+      manage_tags: "管理标签"
+      create_new_tag: "创建新标签"
+      recent_protocols_from_repository: "方案库中方案"
+    notes:
+      title: "记录"
+      no_description: "无任务描述"
+      empty_description_edit_label: "点击此处添加记录"
+    assigned_items:
+      title: "分配任务"
+      assign_from: "分配人"
+    protocol:
+      title: "方案"
+      options_dropdown:
+        title: "方案选项"
+        load_from_repo: "从方案库中载入"
+        import: "输入方案"
+        export: "输出方案"
+        save_to_repo: "存入方案库"
+    buttons:
+      complete: "已完成任务"
+      uncomplete: "未完成任务"
+    complete_modal:
+      description: '你已完成任务中所有步骤，将任务标注为完成？'
+      leave_uncompleted: '保留任务进展状态'
+    description:
+      title: "编辑任务 %{module} 描述"
+      label: "描述"
+    due_date:
+      title: "编辑任务 %{module} 截止日期"
+      label: "截止日期"
+    states:
+      state_label: "状态:"
+      in_progress: "进展中"
+      completed: "完成于"
+      completed_on: "任务完成(%{date})"
+      due_soon: "即将截止"
+      overdue: "截止日期已过"
+    samples:
+      head_title: "%{project} | %{module} | 清单样本"
+    module_archive:
+      head_title: "%{project} | %{module} | 存档"
+      option_delete: "删除"
+      confirm_delete: "确认永久删除结果?"
+      delete_flash: "成功在<strong>%{result}</strong> 任务中<strong>%{module}</strong>删除结果."
+      archived_on: "存档于"
+      archived_on_title: "结果存档于%{date} %{time}."
+      option_download: "下载"
+      no_archived_results: "无存档结果!"
+      archive_timelabel: "存档于 %{date}"
+      restored_flash: "任务%{module}恢复成功!"
+    protocols:
+      head_title: "%{project} | %{module} | Protocols"
+      protocol_status_bar:
+        private_parent: "(私有)"
+        unlinked: "(非关联)"
+        no_description: "无步骤描述"
+        empty_description_edit_label: "点击此处输入方案描述 (非必填)"
+        keywords: "关键词"
+        no_keywords: "无关键词"
+        protocol_created: "方案创建于:"
+        template_updated: "模版更新于:"
+        protocol_updated: "方案更新于:"
+        messages:
+          template_updated_html: "方案库中有更新的版本.<br>更新当前方案?"
+          protocol_updated: "当前方案有修改, 存为一个新的模版？"
+          unlinked: "当前方案无关联版本."
+        btns:
+          unlink: "取消模版链接"
+          unlink_title: "将方案和库中模版方案解除链接"
+          revert: "恢复方案"
+          revert_title: "恢复到库中方案。所有修改将消失。"
+          save_to_repository: "存入库中"
+          save_to_repository_title: "复制此方案到库中"
+          update_self: "从库中更新方案"
+          update_self_title: "从库中存储的方案更新此版本"
+      confirm_link_update_modal:
+        unlink_title: "解除链接"
+        unlink_message: "确认解除链接? 解除后不跟踪修改."
+        unlink_btn_text: "解除链接"
+        revert_title: "恢复链接"
+        revert_message: "确定从库中恢复任务和步骤? 此前所有修改均被覆盖."
+        revert_btn_text: "恢复"
+        update_parent_title: "更新库中版本"
+        update_parent_message: "确认将本版本覆盖库中步骤? 将覆盖库中所有的修改."
+        update_self_title: "从库中版本更新"
+        update_self_message: "确认按照库中版本更新？将覆盖所有本地修改."
+      unlink_flash: "步骤成功解除链接."
+      unlink_error: "解除链接失败."
+      revert_flash: "步骤成功恢复."
+      revert_error: "恢复失败."
+      revert_error_locked: "恢复失败. 库中文件正在被修改."
+      update_parent_flash: "当前版本成功更新库中版本."
+      update_parent_error: "库中版本更新失败."
+      update_parent_error_locked: "恢复失败. 库中文件正在被修改."
+      update_from_parent_flash: "库中版本成功更新."
+      update_from_parent_error: "更新库中版本失败."
+      update_from_parent_error_locked: "更新库文件失败. 库中文件正在被修改."
+      load_from_repository_flash: "库中文件载入成功."
+      load_from_repository_error: "库中文件载入失败."
+      load_from_repository_error_locked: "载入库文件失败. 库中文件正在被修改."
+      load_from_repository_modal:
+        title: "从库中载入步骤"
+        text: "选择要载入步骤."
+        text2: "该操作将覆盖目前任务中步骤并解除相应链接."
+        tab_public: "团队步骤"
+        tab_private: "我的步骤"
+        tab_recent: "Recent protocols"
+        tab_archive: "已存档步骤"
+        thead_name: "姓名"
+        thead_keywords: "关键词"
+        thead_nr_of_linked_children: "已链接任务"
+        thead_published_by: "发布者"
+        thead_added_by: "添加人"
+        thead_published_on: "发布于"
+        thead_created_at: "创建于"
+        thead_updated_at: "最新修改于"
+        confirm_message: "确认从库中载入步骤? 执行后将覆盖当前步骤并解除所有链接. 当前步骤在库中版本不受影响."
+        import_to_linked_task_rep: "确认从库中载入步骤? 执行后将覆盖当前步骤并解除所有链接. 当前步骤在库中版本不受影响"
+        load: "载入"
+      copy_to_repository_modal:
+        title: "复制到库中"
+        name_label: "库中版本题目"
+        name_placeholder: "我的步骤"
+        type_label: "复制到"
+        type_public: "团队步骤"
+        type_private: "我的步骤"
+        type_text: "可将目前步骤复制至团队或个人档案. 团队步骤对所有成员可见, 我的步骤只对用户可见."
+        link_label: "将任务链接至库中"
+        link_text: "<strong>警告!</strong>&nbsp;此操作将解除目前链接的步骤."
+        error_400: "错误.步骤不能从库中复制"
+        confirm: "存入"
+      load_from_file_flash: "成功载入步骤."
+      load_from_file_error: "载入步骤失败."
+      load_from_file_error_locked: "载入步骤失败，一个或多个文件被编辑中."
+      load_from_file_size_error: "载入步骤失败. 文件大小上限为%{size}Mb."
+      load_from_file_invalid_error: "文件名或文件后缀无效."
+      load_from_file_protocol_general_error: "文件载入失败. 某些栏目可能包覆太多项目。(最多为 %{max} and 最少为 %{min})"
+    results:
+      head_title: "%{project} | %{module} | 结果"
+      add_label: "添加新结果:"
+      new_text_result: "文字"
+      new_table_result: "表格"
+      new_asset_result: "文件"
+      published_on: "发布于 <em>%{timestamp}</em> 发布人<em>%{user}</em>"
+      published_table: "表格输入时间 %{timestamp}."
+      published_text:  "文字输入时间 %{timestamp}."
+      published_asset:  "文件上传时间 %{timestamp}."
+      expand_label: "展开所有"
+      collapse_label: "收起所有"
+      empty_name: "添加题目"
+      archive_confirm: "确认结果存档?"
+      info_tab: "信息"
+      comments_tab: "评论"
+      comment_title: "%{user} 于 %{time}:"
+      options:
+        comment_title: "评论"
+        no_comments: "无评论"
+        new_comment: "新评论"
+        edit_title: "编辑结果"
+        archive_title: "结果存档"
+    activities:
+      head_title: "%{project} | %{module} | 活动"
+      no_activities: "当前任务无活动."
+      more_activities: "更多活动"
+    repository:
+      head_title: "%{project} | %{module} | 清单 %{repository}"
+      export: '输出'
+      full_view:
+        modal_live_header: '%{repository_name}: Live version'
+        modal_snapshot_header: '%{repository_name}: Snapshot of %{snaphot_date}'
+        assign_modal_header: 'Assign from %{repository_name} inventory'
+      snapshots:
+        simple_view:
+          live_bottom_label: 'Live version'
+          snapshot_bottom_label: 'Snapshot version %{date_time}'
+          snapshot_tag: 'Snapshot'
+        full_view:
+          header: 'Versions'
+          live: 'Live version'
+          live_description: 'Regularly updated from the inventory'
+          no_live_version: 'Inventory was deleted'
+          no_assigned_items: 'No items assigned'
+          no_snapshots_label: 'You have not created any snapshots yet. To do so click the button bellow.'
+          versions_sidebar_button: 'View versions'
+          create_button: 'Create snapshot'
+          set_default_button: 'Set as default view'
+          created_by: 'by %{full_name}'
+          provisioning: 'Provisioning'
+      flash:
+        assign_to_task_html: "Successfully assigned <strong>%{assigned_items}</strong> item(s) to the task."
+        assign_to_task_and_downstream_html: "Successfully assigned <strong>%{assigned_items}</strong> item(s) to the task and downstream tasks."
+        unassign_from_task_html: "Successfully unassigned <strong>%{unassigned_items}</strong> item(s) from the task."
+        unassign_from_task_and_downstream_html: "Successfully unassigned <strong>%{unassigned_items}</strong> item(s) from the task and downstream tasks."
+        assign_and_unassign_from_task_html: "Successfully assigned <strong>%{assigned_items}</strong> and unassigned <strong>%{unassigned_items}</strong> item(s) from the task."
+        assign_and_unassign_from_task_and_downstream_html: "Successfully assigned <strong>%{assigned_items}</strong> and unassigned <strong>%{unassigned_items}</strong> item(s) from the task and downstream tasks."
+        update_error: "There was an error in updating your item(s)."
+    modals:
+      update_repository_record:
+        title: "Update %{repository_name} items to %{my_module_name} task"
+        message: "Do you want to update %{size} items only from this task, or update them from this task & downstream tasks in the workflow also?"
+        task: 'Update task'
+        task_and_downstream: 'Update task & downstream'
+        newly_assigned_items: "Items newly assigned"
+        items_will_be_removed: "Items that will be removed"
+      assign_repository_record:
+        title: '分配 %{repository_name} 类目 到任务 %{my_module_name}'
+        message: 确认分配 %{size} 类目仅到目前任务, 或者在后续任务陆续分配?
+        task: '任务 & 后续'  
+        task_and_downstream: 'Assign to task & downstream'
+    modules_list_partial:
+      private_tasks_html: 'Assigned to <strong>%{nr}</strong> private task(s)'
+      no_results:
+        title: 'No results found'
+        description: 'Try another search request'
+    unshared_inventory:
+      title_html: The inventory <b>%{inventory_name}</b> is no longer shared with your team.
+      body_html: This inventory has been ushared with your team by the inventory’s owner. To view the item/s that are assigned to your task/s contact the <b>%{team_name}</b> team administrator <b>%{admin_name}</b> (<b>%{admin_email}</b>).
+  experiments:
+    new:
+      create: '新实验'
+      modal_title: '创建新实验'
+      modal_create: '创建'
+      name: '实验名称'
+      name_placeholder: '我的实验'
+      description: '实验描述'
+    edit:
+      modal_title: '编辑'
+      modal_create: '存档'
+      label_title: "编辑"
+      panel_label: '改动'
+      add-description: '添加描述..'
+      no-description: '无描述'
+      no_workflowimg: '无工作流'
+      add_task: '添加任务到实验...'
+    create:
+      success_flash: "成功创建实验 %{experiment}"
+      error_flash: '未能创建新实验.'
+    update:
+      success_flash: "成功更新实验 %{experiment}"
+      error_flash: '未能更新新实验.'
+    archive:
+      success_flash: "成功存档实验%{experiment}"
+      error_flash: '未能存档实验.'
+      label_title: '存档'
+    clone:
+      modal_title: '复制实验 %{experiment}作为模版'
+      label_title: '复制模版'
+      modal_submit: '复制'
+      success_flash: '成功复制实验 %{experiment} 作为模版.'
+      error_flash: '未能复制实验作为模版.'
+      current_project: '(当前项目)'
+    move:
+      modal_title: '转移实验 %{experiment}'
+      notice: '转移实验仅限于同项目成员之间.'
+      label_title: '转移'
+      modal_submit: '转移'
+      success_flash: "成功转移实验 %{experiment}"
+      error_flash: ' 不能转移实验，实验名字以被使用. '
+      no_projects: '目前实验无项目转移.'
+    canvas:
+      archive_confirm: "确认存档实验?"
+      actions: '行动'
+      head_title: "%{project} | 总括"
+      canvas_edit: "编辑实验"
+      zoom: "放大: "
+      reload_on_submit: "正在存储. 重新载入页面可能会导致错误."
+      modal_manage_tags:
+        head_title: "管理标签"
+        subtitle: "显示任务 %{module}所有标签"
+        no_tags: "无标签!"
+        edit_tag: "编辑标签."
+        remove_tag: "从任务 %{module}中移除标签."
+        delete_tag: "从所有任务中删除此标签."
+        save_tag: "存储标签."
+        cancel_tag: "取消标签修改."
+        create: "添加"
+        create_new: "新标签"
+      edit:
+        new_module: "新任务"
+        new_module_hover: "拖入以下窗口"
+        save: "保存工序"
+        save_short: "保存"
+        cancel: "取消"
+        unsaved_work: "确认离开页面，所有数据未保存。"
+        drag_connections: "从此处拖动开始链接"
+        options_header: "选项"
+        edit_module: "任务重命名"
+        clone_module: "从模版中复制任务 (只复制实验步骤)"
+        clone_module_group: "从模版中复制工作流 (只复制实验步骤)"
+        move_module: "转移任务到其他实验"
+        move_module_group: "转移工作流到其他实验"
+        delete_module: "存档任务"
+        delete_module_group: "存档任务"
+        modal_new_module:
+          title: "添加新任务"
+          name: "任务名"
+          name_placeholder: "我的任务"
+          confirm: "添加"
+        modal_edit_module:
+          title: "重命名任务"
+          name: "任务名"
+          confirm: "重命名"
+        modal_move_module:
+          title: "转移任务到实验"
+          confirm: "转移"
+          no_experiments: "无转移实验目标."
+        modal_move_module_group:
+          title: "转移工作流到实验"
+          confirm: "转移"
+          no_experiments: "无转移实验目标."
+        modal_delete_module:
+          title: "存档任务"
+          confirm: "存档"
+          message: "确认存档任务 %{module}? 任务样品和位置将被移除."
+        modal_delete_module_group:
+          title: "存档工作流"
+          confirm: "存档"
+          message: "确认存档任务 %{module} ? 所有任务样品和位置将被移除."
+      popups:
+        info_tab: "任务信息"
+        no_description: "此任务无描述."
+        full_info: "编辑描述"
+        users_tab: "分配任务"
+        no_users: "此任务尚未分配."
+        manage_users: "管理用户"
+        module_user_join: "加入于 %{date}."
+        module_user_join_full: "%{user} 在 %{date} %{time}加入."
+        activities_tab: "活动"
+        no_activities: "无活动!"
+        more_activities: "所有活动"
+        comments_tab: "评论"
+        no_comments: "无评论"
+        more_comments: "更多评论"
+        comment_placeholder: "你的信息"
+        new_comment: "新评论"
+        samples_tab: "样本"
+        no_samples: "无样本!"
+        manage_samples: "管理样本"
+      full_zoom:
+        due_date: "截止日期"
+        no_due_date: "未设定"
+        modal_manage_users:
+          modal_title: "管理用户"
+          no_users: "无用户"
+          user_join: "加入于%{date}."
+          user_join_full: "%{user}于%{date} %{time}加入."
+          create: "添加"
+          invite_users_link: "邀请用户"
+          invite_users_details: "到团队 %{team}."
+          contact_admins: "如需邀请更多用户到%{team}, 请联系管理员."
+      update:
+        success_flash: "项目成功更新."
+    module_archive:
+      head_title: "%{experiment} | 任务存档"
+      no_archived_modules: "无存档任务!"
+      restore_option: "恢复"
+      archived_on: "存档于"
+      archived_on_title: "任务存档于%{date} %{time}."
+
+  tags:
+    new:
+      head_title: "创建标签"
+      title: "创建新标签"
+      name: "标签名"
+      name_placeholder: "我的标签"
+      color: "标签颜色"
+      create: "创建标签"
+    create:
+      new_name: "新标签"
+      success_flash: "成功创建标签 <strong>%{tag}</strong>."
+      error_flash: "不能创建新标签."
+    destroy:
+      success_flash: "成功移除标签<strong>%{tag}</strong>."
+      error_flash: "不能移除标签 <strong>%{tag}</strong>."
+
+  result_texts:
+    new:
+      head_title: "%{project} | %{module} | Add text result"
+      title: "Add result to task %{module}"
+      create: "Add"
+    edit:
+      head_title: "%{project} | %{module} | Edit text result"
+      title: "Edit result from task %{module}"
+      update: "Update"
+    create:
+      success_flash: "Successfully added text result to task <strong>%{module}</strong>"
+    update:
+      success_flash: "Successfully updated text result in task <strong>%{module}</strong>"
+    archive:
+      success_flash: "Successfully archived text result in task <strong>%{module}</strong>"
+    destroy:
+      success_flash: "Text result successfully deleted."
+
+  result_assets:
+    new:
+      head_title: "%{project} | %{module} | Add file result"
+      title: "Add result to task %{module}"
+      create: "Add"
+    edit:
+      head_title: "%{project} | %{module} | Edit file result"
+      title: "Edit result from task %{module}"
+      uploaded_asset: "Uploaded file"
+      update: "Update"
+      locked_file_error: 'This file is being edited by someone else.'
+    create:
+      success_flash: "Successfully added file result to task <strong>%{module}</strong>"
+    update:
+      success_flash: "Successfully updated file result in task <strong>%{module}</strong>"
+    archive:
+      success_flash: "Successfully archived file result in task <strong>%{module}</strong>"
+      error_flash: "Couldn't archive file result. Someone is editing that file."
+    destroy:
+      success_flash: "File result successfully deleted."
+    wopi_open_file: "Open in %{app}"
+    wopi_edit_file: "Edit in %{app}"
+    error_flash: 'Something went wrong! Please try again later.'
+
+  result_tables:
+    new:
+      head_title: "%{project} | %{module} | Add table result"
+      title: "Add result to task %{module}"
+      create: "Add"
+    edit:
+      head_title: "%{project} | %{module} | Edit table result"
+      title: "Edit result from task %{module}"
+      update: "Update"
+    create:
+      success_flash: "Successfully added table result to task <strong>%{module}</strong>"
+    update:
+      success_flash: "Successfully updated table result in task <strong>%{module}</strong>"
+    archive:
+      success_flash: "Successfully archived table result in task <strong>%{module}</strong>"
+    destroy:
+      success_flash: "Table result successfully deleted."
+
+  repositories:
+    repository: "Inventory: %{name}"
+    icon_title:
+      i_shared: "Shared inventory (owned by your Team)"
+      shared_edit: "Shared inventory (owned by %{team_name}). You can edit."
+      shared_read: "Shared inventory (owned by %{team_name}). You can view."
+    index:
+      head_title: "Inventories"
+      title: "Inventories"
+      add_new_repository_tab: "Add inventory"
+      delete_flash: "\"%{name}\" inventory was successfully deleted!"
+      rename_flash: "\"%{old_name}\" inventory was successfully renamed to \"%{new_name}\"!"
+      copy_flash: "\"%{new}\" inventory was successfully copied from \"%{old}\"!"
+      columns: "Columns"
+      edit_inventory: "Edit Inventory"
+      share_inventory: "Share"
+      view_only_permission_label: "You have veiw-only permission"
+      show_per_page: "Show %{number} per page"
+      filter_inventory: "Filter inventory item"
+      snapshot_provisioning_in_progress: 'Editing is disabled while a snapshot is being created. This will only take a moment.'
+
+      options_dropdown:
+        import_items: 'Import items'
+        export_items: 'Export items'
+        rename: "Rename inventory"
+        copy: "Copy inventory"
+        delete: "Delete inventory"
+        archive: 'Archive inventory'
+        restore: 'Restore inventory'
+      modal_delete:
+        title_html: "Delete inventory <em>%{name}</em>"
+        message_html: "Are you sure you want to delete inventory <em>%{name}</em>? This action is irreversible."
+        alert_heading: "Deleting inventory has following consequences:"
+        alert_line_1: "all data inside the inventory will be lost;"
+        alert_line_2: "all references to inventory items will be rendered as invalid."
+        delete: "Delete"
+      modal_rename:
+        title_html: "Rename inventory <em>%{name}</em>"
+        name: "New inventory name"
+        name_placeholder: "My inventory"
+        rename: "Rename"
+      modal_copy:
+        title_html: "Copy inventory <em>%{name}</em>"
+        name: "New inventory name"
+        description: "Only the structure of the inventory is going to be copied."
+        name_placeholder: "My inventory"
+        copy: "Copy"
+      modal_create:
+        title: "Create new inventory"
+        name_label: "Inventory name"
+        name_placeholder: "My inventory"
+        submit: "Create"
+        success_flash: "Inventory <strong>%{name}</strong> successfully created."
+      modal_share:
+        title: "Share Inventory"
+        submit: "Save sharing options"
+        share_with_team: "Share with Team"
+        can_edit: "Can Edit"
+        all_teams: "All teams (current & new)"
+        all_teams_tooltip: "This will disable individual team settings"
+        success_message: "Selected sharing options for the Inventory %{inventory_name} have been saved."
+    show:
+      archived_inventory: "Archived %{repository_name}"
+      subtitle: "Owned by %{team_name}"
+      your_team: "your Team"
+      show_active_items: "Show active items"
+      show_archived_items: "Show archived items"
+      archived_view_label:
+        active: "These are individually archived items from the %{repository_name} inventory. The inventory itself is active."
+        archived_on: "Inventory archived on"
+        archived_by: "by"
+
+    table:
+      id: 'ID'
+      assigned: "Assigned"
+      assigned_search: 'Search...'
+      assigned_tooltip: "%{tasks} tasks in &#10;%{experiments} experiments,&#10;%{projects} projects"
+      row_name: "Name"
+      added_on: "Added on"
+      added_by: "Added by"
+      archived_on: "Archived on"
+      archived_by: "Archived by"
+      enter_row_name: "Enter name"
+      locked_item: "This is read-only item."
+      assets:
+        select_file_btn: "Select File (Max %{max_size} MB)..."
+      text:
+        errors:
+          too_long: "Text is too long (maximum is %{max_length} characters)"
+        enter_text: "Enter text"
+      number:
+        enter_number: "Enter number"
+        errors:
+          wrong_format: "Not correct number format"
+      list:
+        select_item: "Select..."
+      status:
+        set_status: "Set Status..."
+      checklist:
+        set_checklist: "Set Checklist..."
+      date_time:
+        errors:
+          set_all_or_none: 'Needs to set both or none'
+          not_valid_range: 'Range is not valid.'
+      name:
+        errors:
+          too_long: "Item name is too long (maximum is %{max_length} characters)"
+          is_empty: "Item name should be filled"
+
+    add_new_record: "New item"
+    import_records:
+      import: 'Import'
+      no_header_name: 'No column name'
+      success_flash: "%{number_of_rows} of %{total_nr} new item(s) successfully imported."
+      partial_success_flash: "%{nr} of %{total_nr} successfully imported. Other rows contained errors."
+      error_message:
+        items_limit: "The imported file contains too many rows. Max %{items_size} items allowed to upload at once."
+        temp_file_not_found: "This file could not be found. Your session might expire."
+        session_expired: "Your session expired. Please try again."
+        no_data_to_parse: "There's nothing to be parsed."
+        no_column_name: "Name column is required!"
+        duplicated_values: "Two or more columns have the same mapping."
+        errors_list_title: "Items were not imported because one or more errors were found:"
+        no_repository_name: "Item name is required!"
+    edit_record: "Edit"
+    copy_record: "Duplicate"
+    delete_record: "Delete"
+    archive_record: "Archive"
+    restore_record: "Restore"
+    save_record: "Save"
+    cancel_save: "Cancel"
+    assign_records_to_module: "Assign"
+    unassign_records_from_module: "Unassign"
+    columns: "Columns"
+    column_new_text: "New column"
+    column_create: "Create"
+    columns_delete: "Delete"
+    columns_changed: "Someone removed/added a new column to the inventory in use. To prevent data inconsistency we will reload this page for you."
+    columns_visibility: "Visible columns"
+    view_all_records: "View All Items"
+    view_assigned_records: "View Assigned Items"
+    modal_delete_record:
+      title: "Delete items"
+      notice: "Are you sure you want to delete the selected item(s)?"
+      delete: "Delete"
+    modal_delete_column:
+      title: "Delete a column"
+      message: "Are you sure you wish to permanently delete selected column %{column}? This action is irreversible."
+      alert_heading: "Deleting a column has following consequences:"
+      alert_line_1: "you will lose information in this column for %{nr} item(s);"
+      alert_line_2: "the column will be deleted for all team members."
+      delete: "Delete"
+    modal_parse:
+      title: 'Import items'
+      warning_1: 'Be careful when importing into Dropdown column/s! Each new unique cell value from the file will create a new Dropdown option. Maximum nr. of Dropdown options is %{limit}.'
+      warning_2: 'Importing into file columns is not supported.'
+      import: 'Import'
+    modal_import:
+      title: 'Import items'
+      notice: 'You may upload .csv file (comma separated) or tab separated file (.txt or .tsv) or Excel file (.xlsx). First row should include header names, followed by rows with sample data.'
+      upload: 'Upload'
+      limit_description_html: 'When importing items, try to limit the amount to <b>500</b>.<br>Otherwise it may impede to process.'
+    js:
+      permission_error: "You don't have permission to edit this item."
+      not_found_error: "This inventory item does not exist."
+      column_added: "New column was sucessfully created."
+      empty_column_name: "Please enter column name."
+      leaving_warning: "You have made some changes, are you sure you want to leave this page?"
+    create:
+      success_flash: "Successfully added item <strong>%{record}</strong> to inventory <strong>%{repository}</strong>"
+    update:
+      success_flash: "Successfully updated item <strong>%{record}</strong> in inventory <strong>%{repository}</strong>"
+    destroy:
+      success_flash: "%{records_number} item(s) successfully deleted."
+      contains_other_records_flash: "%{records_number} item(s) successfully deleted. %{other_records_number} of the selected item(s) were created by other users and were not deleted."
+      no_records_selected_flash: "There were no selected items."
+      no_deleted_records_flash: "No items were deleted. %{other_records_number} of the selected items were created by other users and were not deleted."
+    default_column: 'Name'
+    copy_records_report: "%{number} item(s) successfully copied."
+    archive_inventories:
+      success_flash: "Inventories were successfully archived!"
+      unsuccess_flash: "Inventories were unsuccessfully archived!"
+      invalid_inventories_flash: "Please provide valid inventories"
+    restore_inventories:
+      success_flash: "Inventories were successfully restored!"
+      unsuccess_flash: "Inventories were unsuccessfully restored!"
+    archive_records:
+      success_flash: "Successfully archived items in inventory <strong>%{repository}</strong>"
+      unsuccess_flash: "Unsuccessfully archived items in inventory <strong>%{repository}</strong>"
+      invalid_rows_flash: "Please provide valid rows"
+    restore_records:
+      success_flash: "Successfully restored items in inventory <strong>%{repository}</strong>"
+      unsuccess_flash: "Unsuccessfully restored items in inventory <strong>%{repository}</strong>"
+    multiple_share_service:
+      unable_to_share: "Unable to share %{repository} inventory with %{team} team."
+      unable_to_unshare: "Unable to unshare %{repository} inventory with %{team} team."
+      unable_to_update: "Unable to update sharing %{repository} inventory with %{team} team."
+      not_allowed: "You are not allowed to share this repository!"
+      invalid_arguments: "Can't find %{key}"
+      nothing_to_delete: "Can't find sharing relation for destroy"
+    my_module_update_row_service:
+      invalid_arguments: "Can't find %{key}"
+    my_module_assigned_snapshot_service:
+      invalid_arguments: "Can't find %{key}"
+  libraries:
+    manange_modal_column_index:
+      title: "Manage columns"
+      add_column: "Add column"
+    manange_modal_column:
+      name_placeholder: "Enter column name..."
+      name: "Name"
+      colum_type: "Column type"
+      dropdown_item_descirption: "Dropdown items should be separated by comma."
+      change_multi_select_items_warning: "Be careful: changing existing list items will result in deselecting previously selected items."
+      too_many_items_label: " of %{limit} items"
+      select:
+        repository_text_value: "Text"
+        repository_number_value: "Number"
+        repository_date_value: "Date"
+        repository_date_range_value: "Date"
+        repository_time_value: "Time"
+        repository_time_range_value: "Time"
+        repository_date_time_value: "Date & Time"
+        repository_date_time_range_value: "Date & Time"
+        repository_checklist_value: "Checklist"
+        repository_status_value: "Status"
+        repository_list_value: "Dropdown"
+        repository_asset_value: "File"
+      new:
+        title: "Add New Column"
+        button: "Save column"
+      edit:
+        title: "Edit %{name} Column"
+        button: "Update column"
+      number_type:
+        decimals_label: "Decimal digits"
+      list_type:
+        delimiter_label: "Delimiter"
+        dropdown_items_label: "Dropdown items"
+        dropdown_item_select_option: "Select option..."
+        delimiters:
+          auto: "Auto"
+          return: "Return"
+          space: "Space"
+          semicolon: "Semicolon"
+          comma: "Comma"
+        items_placeholders:
+          auto: "Enter dropdown list options..."
+          return: "Enter dropdown list options one per line:\nDropdown list option 1\nDropdown list option 2\n..."
+          comma: "Enter dropdown list options, separated by commas..."
+          semicolon: "Enter dropdown list options, separated by semicolons..."
+          space: "Enter dropdown list options, separated by space..."
+      status_type:
+        status_options_label: "Status options"
+        add_status_label: "Add status option"
+        errors:
+          icon_and_name_error: "Status icon and status name should be filled"
+      datetime_type:
+        range_label: 'Range'
+      checklist_type:
+        multiple_options: 'selected'
+        all_options: 'All options'
+        checklist_items: 'Checklist items'
+        items_placeholders:
+          auto: "Enter checklist items..."
+          return: "Enter checklist items one per line:\nChecklist item 1\nChecklist item  2\n..."
+          comma: "Enter checklist items, separated by commas..."
+          semicolon: "Enter checklist items, separated by semicolons..."
+          space: "Enter checklist items, separated by space..."
+
+    repository_columns:
+      head_title: '%{repository} | Manage Columns'
+      repository_list_items_limit: "Dropdown items limit reached max. %{limit}"
+      no_permissions: "You don't have permissions on that repository"
+      update:
+        success_flash: "Column %{name} was successfully updated."
+      create:
+        success_flash: "Column %{name} was successfully created."
+      destroy:
+        success_flash: "Column %{name} was successfully deleted."
+        error_flash: "Something went wrong! Please try again later."
+    index:
+      head_title: "Inventories"
+      head_title_archived: "Archived Inventories"
+      table:
+        name: "Name"
+        number_of_items: "No. of items"
+        shared: "Shared"
+        ownership: "Ownership"
+        added_on: "Added on"
+        added_by: "Added by"
+        archived_on: "Archived on"
+        archived_by: "Archived by"
+      shared_for_viewing: "For viewing"
+      shared_for_editing: "For editing"
+      not_shared: "No"
+      switch_view:
+        active: Show active inventories
+        archived: Show archived inventories
+      buttons:
+        edit: "Edit"
+        duplicate: "Duplicate"
+        archive: "Archive"
+        restore: "Restore"
+        delete: "Delete"
+      no_libraries:
+        create_new_button: "New Inventory"
+    show:
+      head_title: "Inventories | %{library}"
+  repository_row:
+    modal_info:
+      ID: 'ID:'
+      head_title: "Information for item '%{repository_row}'"
+      added_on: "Added on"
+      added_by: "Added by"
+      custom_field: "%{cf}: "
+      title: "This item is assigned to %{nr} tasks."
+      private_tasks: "%{nr} task(s) are private and will not be displayed."
+      no_tasks: "This item in not assigned to any task."
+  samples:
+    columns: "Columns"
+    columns_visibility: "Toggle visibility"
+    columns_delete: "Delete"
+    types_and_groups: "Types and groups"
+    actions: "Actions"
+    add_new_sample: "Add new sample"
+    import: "Import"
+    export: "Export"
+    assign_samples_to_module: "Assign"
+    unassign_samples_to_module: "Unassign"
+    delete_samples: "Delete"
+    edit_sample: "Edit"
+    save_sample: "Save"
+    cancel_save: "Cancel"
+    column_create: "Create"
+    column_new_text: "New column"
+    column_visibility: "Visible columns"
+    add_new_sample_type: "Add sample type"
+    add_new_sample_group: "Add sample group"
+    add_new_column: "Add column"
+    view_all_samples: "View all samples"
+    view_assigned_samples: "View assigned samples"
+    modal_info:
+      added_on: "Added on"
+      added_by: "Added by"
+      custom_field: "%{cf}: "
+      head_title: "Information for sample '%{sample}'"
+      title: "This sample is assigned to %{nr} tasks."
+      no_tasks: "This sample in not assigned to any task."
+      no_group: "No sample group"
+      no_type: "No sample type"
+      sample_group: "Sample group:"
+      sample_type: "Sample type:"
+    modal_import:
+      title: "Import samples"
+      notice: "You may upload .csv file (comma separated) or tab separated file (.txt or .tsv) or Excel file (.xlsx). First row should include header names, followed by rows with sample data."
+      no_header_name: 'No column name'
+      upload: "Upload file"
+    modal_delete:
+      title: "Delete samples"
+      notice: "Are you sure you want to delete the selected samples?"
+      delete: "Delete samples"
+    modal_add_custom_field:
+      title_html: "Add new column to team <strong>%{team}</strong>"
+      create: "Add new column"
+    modal_delete_custom_field:
+      title: "Delete a column"
+      message: "Are you sure you wish to permanently delete selected column %{cf}? This action is irreversible."
+      alert_heading: "Deleting column has following consequences:"
+      alert_line_1: "you will lose information in this column for %{nr} samples;"
+      alert_line_2: "the column will be deleted for all team members."
+      delete: "Delete column"
+    modal_add_new_sample_group:
+      title_html: "Add new sample group to team <strong>%{team}</strong>"
+      create: "Add new sample group"
+    modal_add_new_sample_type:
+      title_html: "Add new sample type to team <strong>%{team}</strong>"
+      create: "Add new sample type"
+    table:
+      assigned: "Assigned"
+      sample_name: "Sample name"
+      sample_type: "Sample type"
+      sample_group: "Sample group"
+      added_on: "Added on"
+      added_by: "Added by"
+      no_group: "No sample group"
+      no_type: "No sample type"
+      add_sample_type: "Add new sample type"
+      add_sample_group: "Add new sample group"
+    new:
+      head_title: "%{team} | Add new sample"
+      title: "Add new sample to team %{team}"
+      create: "Add new sample"
+      sample_type: "Sample type"
+      sample_group: "Sample group"
+      no_group: "No sample group"
+      no_type: "No sample type"
+      edit_sample_type: "Edit sample type"
+      edit_sample_group: "Edit sample group"
+    edit:
+      head_title: "%{team} | Edit sample"
+      title: "Edit sample %{sample} from team %{team}"
+      create: "Edit sample"
+      scf_does_not_exist: "This field does not exists."
+    create:
+      success_flash: "Successfully added sample <strong>%{sample}</strong> to team <strong>%{team}</strong>"
+    update:
+      success_flash: "Successfully updated sample <strong>%{sample}</strong> to team <strong>%{team}</strong>"
+    destroy:
+      success_flash: "%{sample_number} samples successfully deleted."
+      contains_other_samples_flash: "%{sample_number} samples successfully deleted. %{other_samples_number} of the selected samples were created by other users and were not deleted."
+      no_sample_selected_flash: "There were no selected samples."
+      no_deleted_samples_flash: "No samples were deleted. %{other_samples_number} of the selected samples were created by other users and were not deleted."
+    js:
+      permission_error: "You don't have permission to edit this sample."
+      not_found_error: "This sample does not exist."
+      column_added: "New column was sucessfully created."
+      empty_column_name: "Please enter column name."
+  sample_types:
+    index:
+      head_title: 'Sample Types'
+      sample_types: 'Sample types'
+      sample_groups: 'Sample groups'
+      new: 'Create sample type'
+      destroy_modal_title: "Permanently delete the \"%{name}\" sample type?"
+      destroy_modal_body: 'This action is irreversible and makes the sample type inaccessible to all team members.'
+      destroy_modal_submit: 'Permanently delete sample type'
+      destroy_flash: "\"%{name}\" sample type was successfully deleted!"
+
+  custom_fields:
+    new:
+      title_html: "Add new column to team <strong>%{team}</strong>"
+      create: "Add new column"
+    create:
+      success_flash: "Successfully added column <strong>%{custom_field}</strong> to team <strong>%{team}</strong>."
+
+  teams:
+    parse_sheet:
+      head_title: "%{team} | Import samples"
+      title: "Import samples to team %{team}"
+      help_text: "Match the columns of your uploaded file with already existing columns in database."
+      scinote_columns_html: "<em>SciNote</em> columns:"
+      file_columns: "Imported columns:"
+      example_value: "Imported file content:"
+      do_not_include_column: "Do not include this column"
+      errors:
+        invalid_file: "The file you provided is invalid. Make sure the file is encoded using %{encoding}."
+        invalid_extension: "The file has invalid extension."
+        empty_file: "You've selected empty file. There's not much to import."
+        temp_file_failure: "We couldn't create temporary file. Please contact administrator."
+        no_file_selected: "You didn't select any file."
+        errors_list_title: "Samples were not imported because one or more errors were found:"
+        list_row: "Row %{row}"
+        list_error: "%{key}: %{val}"
+    import_samples:
+      head_title: "%{team} | Import samples"
+      title: "Import samples to team %{team}"
+      sample:
+        one: "1 sample"
+        other: "%{count} samples"
+      success_flash: "%{nr} of %{samples} successfully imported."
+      partial_success_flash: "%{nr} of %{samples} successfully imported. Other rows contained errors."
+      errors:
+        temp_file_not_found: "This file could not be found. Your session might expire."
+        session_expired: "Your session expired. Please retry importing samples again."
+        no_data_to_parse: "There's nothing to be parsed."
+        no_sample_name: "Sample name is required!"
+        duplicated_values: "Two or more columns have the same mapping."
+
+  sample_groups:
+    index:
+      head_title: 'Sample Groups'
+      new: 'Create sample group'
+      destroy_modal_title: "Permanently delete the \"%{name}\" sample group?"
+      destroy_modal_body: 'This action is irreversible and makes the sample group inaccessible to all team members.'
+      destroy_modal_submit: 'Permanently delete sample group'
+      destroy_flash: "\"%{name}\" sample group was successfully deleted!"
+    color_label: "Sample group color"
+    create:
+      success_flash: "Successfully added sample group <strong>%{sample_group}</strong> to team <strong>%{team}</strong>."
+  system_notifications:
+    navbar:
+      tooltip: 'What’s new notifications'
+    emails:
+      subject: "You've received a What's new notification"
+      intro_paragraph: "Hi %{user_name}, you've received What's new notification in SciNote:"
+    index:
+      whats_new: "What’s New"
+      more_notifications: "Show more notifications"
+      no_notifications: "No more notifications"
+      settings: "Settings"
+      see_all: "show all"
+  activities:
+    index:
+      global_activities_title: "Global activities"
+      today: "Today"
+      more_activities: "Show more activities"
+      no_activities: "No activities!"
+      no_activities_message: "No activities could be displayed. Update filters or start using SciNote to generate your first activities."
+      no_activities_task_message: "No activities could be displayed."
+      activity_counter_label: " activity"
+      activities_counter_label: " activities"
+      expand_all: "Expand all"
+      collapse_all: "Collapse all"
+    modal:
+      modal_title: "Activities"
+    result_type:
+      text: "text"
+      table: "table"
+      asset: "file"
+    wupi_file_editing:
+      started: "editing started"
+      finished: "editing finished"
+    file_editing:
+      started: "editing started"
+      finished: "editing finished"
+    protocols:
+      my_to_team_message: 'My protocols to Team protocols'
+      team_to_my_message: 'Team protocols to My protocols'
+
+  user_my_modules:
+    new:
+      head_title: "%{project} | %{module} | Add user"
+      title: "Add user to task %{module}"
+      create: "Add user to task"
+      no_users_available: "All users of the current project all already added to this task."
+      assign_user: "Add user"
+      back_button: "Back to task"
+    create:
+      success_flash: "Successfully added user %{user} to task <strong>%{module}</strong>."
+      error_flash: "User %{user} could not be added to task <strong>%{module}</strong>."
+    destroy:
+      success_flash: "Successfully removed user %{user} from task <strong>%{module}</strong>."
+      error_flash: "User %{user} could not be removed from task <strong>%{module}</strong>."
+
+  step_comments:
+    new:
+      head_title: "%{project} | %{module} | Add comment to step"
+      title: "Add comment to step %{step}"
+      create: "Add comment"
+    create:
+      success_flash: "Successfully added comment to step <strong>%{step}</strong>."
+
+  result_comments:
+    new:
+      head_title: "%{project} | %{module} | Add comment to result"
+      title: "Add comment to result"
+      create: "Add comment"
+    create:
+      success_flash: "Successfully added comment to result."
+
+  users:
+    enums:
+      status:
+        active: "active"
+        pending: "pending"
+    invitations:
+      edit:
+        head_title: "Accept invitation"
+    registrations:
+      edit:
+        head_title: "My profile"
+        title: "My profile"
+        avatar_label: "Profile photo"
+        avatar_btn: "Edit photo"
+        avatar_modal:
+          title: 'Change your profile photo'
+          upload_button: 'Upload a photo'
+          option_text_html: 'or<br>Select your avatar below'
+        name_label: "Full name"
+        name_title: "Change name"
+        initials_label: "Initials"
+        initials_title: "Change initials"
+        email_label: "Email"
+        email_title: "Change email"
+        new_email_label: "New email"
+        current_password_label: "Current password"
+        password_explanation: "(we need your current password to confirm your changes)"
+        waiting_for_confirm: "Currently waiting confirmation for: %{email}"
+        password_label: "Password"
+        password_title: "Change password"
+        new_password_label: "New password"
+        new_password_2_label: "New password confirmation"
+      new:
+        head_title: "Sign up"
+        team_name_label: "Team name"
+        team_name_placeholder: "e.g. John's lab"
+        email_label: "E-mail"
+        full_name_label: "Full name"
+        password_label: "Password"
+        minimum_password_length: "(%{password_length} characters minimum)"
+        password_confirmation_label: "Password confirmation"
+        captcha_description: "Let us know you’re human. Enter the captcha below."
+      new_with_provider:
+        head_title: "Complete the Sign up"
+    statistics:
+      title: "My statistics"
+      team: "Team"
+      project: "Project"
+      experiment: "Experiment"
+      protocol: "Protocol"
+    settings:
+      changed_team_flash: "You are working on %{team} now!"
+      changed_team_error_flash: "Something went wrong! Try again later."
+      changed_team_in_search: "The searched item is not in your current team. You will be redirected to %{team} team!"
+      sidebar:
+        account: "Account"
+        teams: "Teams"
+        account_nav:
+          profile: "Profile"
+          preferences: "Preferences"
+          addons: "Add-ons"
+          connected_accounts: "Connected Accounts"
+      account:
+        preferences:
+          head_title: "Settings | My preferences"
+          edit:
+            time_zone_label: "Time zone"
+            time_zone_sublabel: "Time zone setting affects all time & date fields throughout application."
+            time_zone_title: "Time zone"
+            date_format_label: "Date format"
+            date_format_sublabel: "Date format setting affects all date display throughout application."
+            date_format_title: "Date format"
+          update_flash: "Preferences successfully updated."
+        addons:
+          head_title: "Settings | Add-ons"
+          title: "Add-ons"
+          no_addons: "You have no SciNote Add-ons."
+        connected_accounts:
+          head_title: "Settings | Connected Accounts"
+          title: "Connected Accounts"
+          not_connected: "You have no Connected accounts"
+          unlink_success: "Sucessfully unlinked"
+          azure_ad:
+            title: "Your Azure AD Account"
+            connect_hint: "Allows you to sign in with your Azure AD account."
+            connected: "Connected"
+            unlink_button: "Unlink"
+            unlink_modal:
+              title: "Unlink Azure AD account?"
+              description_1: "Are you sure you would like unlink Azure AD and SciNote accounts?"
+              submit_button: "Submit"
+          errors:
+            not_found: "You have no Connected accounts for this provider"
+            generic: "Unable to unlink linked account"
+      teams:
+        head_title: "Settings | Teams"
+        breadcrumbs:
+          all: "All teams"
+          new_team: "New team"
+        show:
+          enter_description: "Enter Team description"
+        index:
+          description_label: "Team is a group of SciNote users who are working on the same projects and share the inventories."
+          member_of:
+            one: "Currently you are member of %{count} team."
+            other: "Currently you are member of %{count} teams."
+          no_teams: "You are not a member of any team."
+          new_team: "New Team"
+          thead_name: "Team"
+          thead_role: "Role"
+          thead_created_at: "Created at"
+          thead_joined_on: "Joined on"
+          thead_members: "Members"
+          na: "n/a"
+          leave: "Leave team"
+        new:
+          name_label: "Team name"
+          name_placeholder: "My team"
+          name_sublabel: "Pick a name that would best describe your team (e.g. 'University of ..., Department of ...')."
+          description_label: "Description"
+          description_sublabel: "Describe your team."
+          create: "Create"
+        edit:
+          header_created_at: "Created on:"
+          header_created_by: "Created by:"
+          header_created_by_name_email: "%{name} (%{email})"
+          header_space_taken: "Space usage:"
+          header_no_description: "No description"
+          name_title: "Edit team name"
+          name_label: "Name"
+          description_title: "Edit team description"
+          description_label: "Description"
+          team_members_title: "Team members"
+          add_user: "Add team members"
+          thead_user_name: "Name"
+          thead_email: "Email"
+          thead_joined_on: "Joined on"
+          thead_status: "Status"
+          thead_role: "Role"
+          thead_actions: "Actions"
+          user_dropdown:
+            role_label: "User role"
+            remove_label: "Remove"
+          delete_team_heading: "Delete team"
+          can_delete_message: "This team can be deleted because it doesn't have any projects."
+          delete_text: "Delete team."
+          cannot_delete_message_projects: "Cannot delete this team. Only empty teams (without any projects) can be deleted."
+          modal_destroy_team:
+            title: "Delete team"
+            message: "Are you sure you wish to delete team %{team}? All of the users will be removed from the team as well. This action is irreversible."
+            confirm: "Delete team"
+            flash_success: "Team %{team} was successfully deleted."
+      user_teams:
+        leave_uo_heading: "Leave team %{team}"
+        leave_uo_message: "Are you sure you wish to leave team %{team}? This action is irreversible."
+        leave_uo_alert_heading: "Leaving team has following consequences:"
+        leave_uo_alert_line_1: "you will lose access to all content belonging to the team (including projects, tasks, protocols and activities);"
+        leave_uo_alert_line_2: "all projects in the team where you were the sole <b>Owner</b> will receive a new owner from the team administrators;"
+        leave_uo_alert_line_3: "all repository protocols in the team belonging to you will be reassigned onto a new owner from team administrators;"
+        leave_uo_alert_line_4: "all inventory items in the team added by you will be reassigned onto a new owner from team administrators."
+        leave_uo_confirm: "Leave"
+        destroy_uo_heading: "Remove user %{user} from team %{team}"
+        destroy_uo_message: "Are you sure you wish to remove user %{user} from team %{team}?"
+        destroy_uo_alert_heading: "Removing user from team has following consequences:"
+        destroy_uo_alert_line_1: "user will lose access to all content belonging to the team (including projects, tasks, protocols and activities);"
+        destroy_uo_alert_line_2: "all projects in the team where user was the sole <b>Owner</b> will be reassigned onto you as a new owner;"
+        destroy_uo_alert_line_3: "all repository protocols in the team belonging to user will be reassigned onto you;"
+        destroy_uo_alert_line_4: "all inventory items in the team added by user will be reassigned onto you."
+        destroy_uo_confirm: "Remove"
+        leave_flash: "Successfuly left team %{team}."
+
+  protocols:
+    protocols_io_import:
+      title_too_long: "... Text is too long so we had to cut it off."
+      too_long: "... <span class='label label-warning'>Text is too long so we had to cut it off.</span>"
+      import_description_notice: "The protocols description is listed below under \"Protocol info\"."
+      preview:
+        description: "Protocol Description: "
+        before_start: "Before starting protocol information:"
+        warning: "Protocol warning:"
+        guidelines: "Guidelines:"
+        link: "Link:"
+        s_nobr_link: "Link:"
+        s_link: "Link:"
+        s_desc: "Description:"
+        strng_s_desc: "Description:"
+        s_exp_res: "Expected result:"
+        sw_name: "<strong>Software package:</strong>"
+        dev: "Developer:"
+        vers: "Version:"
+        repo: "Repository:"
+        os: "OS name , OS version:"
+        command_name: "<strong>Command:</strong>"
+        sub_prot: "<strong>This protocol also contains an attached sub-protocol:</strong>"
+        safety_info: "<strong>Safety information:</strong>"
+        auth: "Author:"
+        dataset_name: "<strong>Dataset:</strong>"
+        manuscript_citation: "Manuscript citation:"
+        published_on: "Publish date:"
+        vendor_name: "Vendor name:"
+        vendor_link: "Vendor link:"
+        keywords: "Keywords:"
+        tags: "Tags:"
+      comp_append:
+        table_moved: "<br><strong><i>There was a table here, it was moved to the end of this step. </i></strong>"
+        missing_step: "Step"
+        missing_desc: "Description missing"
+        general_link: "<br>Link: "
+        expected_result: "<br><strong>Expected result: </strong>"
+        soft_packg:
+          name: "<br><strong>Software package: </strong>"
+          developer: "<br>Developer: "
+          version: "<br>Version: "
+          link: "<br>Link: "
+          repository: "<br>Repository: "
+          os: "<br>OS name , OS version: "
+        dataset:
+          name: "<br><strong>Dataset: </strong>"
+          link: "<br>Link: "
+        command:
+          name: "<br><strong>Command: </strong>"
+          description: "<br>Description: "
+          os: "<br>OS name , OS version: "
+        sub_protocol:
+          title: "<br><strong>This step also contains an attached sub-protocol: </strong>"
+          title_html: "<br>Author: "
+          uri: "<br>Link: "
+        safety_infor:
+          body: "<br><strong>Safety information: </strong>"
+          link: "<br>Link: "
+    import_export:
+      load_file_error: "Failed to load the protocol file."
+      import_modal:
+        title_import: "Import protocol/s"
+        title_import_into_protocol: "Load protocol from file"
+        title_import_into_protocol_protocols_io: "Load protocol from protocols.io file"
+        import_into_protocol_message: "This will overwrite the current protocol!"
+        import_into_protocol_confirm: "Are you sure you wish to load protocol from file? This action will overwrite the current protocol."
+        import_to_linked_task_file: "Are you sure you wish to load protocol from file? This action will overwrite the current protocol in the task and unlink it from repository. The current protocol will remain unchanged in repository."
+        name_label: "Protocol name"
+        authors_label: "Authors"
+        description_label: "Description"
+        published_on_label: "Published on"
+        created_at_label: "Created at"
+        updated_at_label: "Last modified at"
+        preview_title: "Protocol preview"
+        preview_title_position: " | %{current} of %{total}"
+        assets_header: "Files"
+        import_current: "Load Current"
+        import_all: "Load All"
+        import: "Load"
+        import_to_team_protocols_label: "Import to Team Protocols"
+        import_to_private_protocols_label: "Import to My Protocols"
+    export:
+      export_results:
+        title: "Export results"
+        message_failed: "Failed to export %{nr} protocols."
+        message_ok: "Successfully exported %{nr} protocols."
+        row_success: "Exported"
+        row_failed: "Failed"
+    header:
+      created_at: "Created at"
+      updated_at: "Last modified at"
+      added_by: "Added by"
+      keywords: "Keywords"
+      authors: "Authors"
+      no_authors: "No authors"
+      description: "Description"
+      no_description: "No description"
+      keywords_modal: "Input one or multiple keywords, confirm each keyword with ENTER key"
+      edit_name_modal:
+        title: "Edit name of protocol %{protocol}"
+        label: "Name"
+      edit_keywords_modal:
+        title: "Edit keywords of protocol %{protocol}"
+        update_failed: "Could not update protocol keywords."
+      edit_authors_modal:
+        title: "Edit authors of protocol %{protocol}"
+        label: "Authors"
+      edit_description_modal:
+        title: "Edit description of protocol %{protocol}"
+        label: "Description"
+    index:
+      head_title: "Protocol management"
+      navigation:
+        public: "Team protocols"
+        private: "My protocols"
+        external_protocols: "External protocols"
+        archive: "Archive"
+      public_description: "Team protocols are visible and can be used by everyone from the team."
+      private_description: "My protocols are only visible to you."
+      create_new: "New"
+      edit: "Edit"
+      clone_btn: "Copy"
+      import: "Import"
+      import_alt: " from SciNote protocol file(.eln)"
+      import_json: " from protocols.io file"
+      modal_import_json_upload: "Upload"
+      modal_import_json_title: "Import protocols.io file"
+      modal_import_json_notice: "Upload your protocols.io protocol file"
+      export: "Export"
+      make_private: "Move to My Protocols"
+      publish: "Move to Team protocols"
+      archive_action: "Archive"
+      thead_name: "Name"
+      thead_keywords: "Keywords"
+      thead_nr_of_linked_children: "No. of linked tasks"
+      thead_published_by: "Published by"
+      thead_added_by: "Added by"
+      thead_archived_by: "Archived by"
+      thead_published_on: "Published at"
+      thead_created_at: "Created at"
+      thead_archived_on: "Archived at"
+      thead_updated_at: "Last modified at"
+      preview:
+        title: "%{protocol} preview"
+      linked_children:
+        title: "Tasks linked to protocol %{protocol}"
+        used_in: "Number of tasks linked to this protocol: %{nr}"
+        no_linked_children: "This protocol is not linked to any task."
+      archive:
+        description: "Archived protocols can only be seen by you. Restoring protocols will return them to their previous location (team/my protocols)."
+      restore: "Restore"
+      make_private_unauthorized: "You do not have permission to move selected protocols to My protocols."
+      make_private_error: "Error occured while moving selected protocols to My protocols."
+      publish_unauthorized: "You do not have permission to move selected protocols to Team protocols."
+      publish_error: "Error occured while moving selected protocols to Team protocols."
+      archive_unauthorized: "You do not have permission to archive selected protocols."
+      archive_error: "Error occured while archiving selected protocols."
+      restore_unauthorized: "You do not have permission to restore selected protocols."
+      restore_error: "Error occured while restoring selected protocols."
+      row_renamed_html: "%{old_name}<i> to </i>%{new_name}"
+      no_protocol_name: "(no name)"
+      create:
+        title: "Create new protocol"
+        name_label: "Protocol name"
+        name_placeholder: "My protocol"
+        message_public: "When you create a new Team protocol, it will instantly be visible to all members of the team."
+        message_private: "When you create a new My protocol, it will only be visible to you."
+        submit: "Create"
+      clone:
+        success_flash: "Successfully copied protocol '%{new}' from protocol '%{original}'."
+        error_flash: "Failed to copied protocol '%{original}'."
+      make_private_results:
+        title: "Move to My protocols results"
+        message_failed: "Failed to move %{nr} protocols to My protocols."
+        message_ok: "Successfully moved %{nr} protocols to My protocols."
+        row_success: "Moved to My protocols"
+        row_renamed: "Moved to My protocols & renamed"
+        row_failed: "Failed"
+      publish_results:
+        title: "Move to Team protocols results"
+        message_failed: "Failed to move %{nr} protocols to Team protocols."
+        message_ok: "Successfully moved %{nr} protocols to Team protocols."
+        row_success: "Moved to Team protocols"
+        row_renamed: "Moved to Team protocols & renamed"
+        row_failed: "Failed"
+      import_results:
+        title: "Import results"
+        message_failed: "Failed to import %{nr} protocol/s."
+        message_ok: "Successfully imported %{nr} protocol/s."
+        message_ok_pio: "Successfully imported protocol from protocols.io file."
+        message_warn_truncated: "Successfully imported protocol from protocols.io file. However, text in some fields was too long so we had to cut it off."
+        row_success: "Imported"
+        row_renamed: "Imported & renamed"
+        row_failed: "Failed"
+        row_file_too_large: "(Protocol too large)"
+      confirm_archive:
+        title: "Archive protocols"
+        message: "Are you sure you wish to archive the selected protocols? All the task protocols will be unlinked."
+        confirm: "Archive"
+      archive_results:
+        title: "Archive results"
+        message_failed: "Failed to archive %{nr} protocols."
+        message_ok: "Successfully archived %{nr} protocols."
+        row_success: "Archived"
+        row_renamed: "Archived & renamed"
+        row_failed: "Failed"
+        preview: "View"
+      restore_results:
+        title: "Restore results"
+        message_failed: "Failed to restore %{nr} protocols."
+        message_ok: "Successfully restored %{nr} protocols."
+        row_success: "Restored"
+        row_renamed: "Restored & renamed"
+        row_failed: "Failed"
+        row_in_repository_public: "%{protocol} - <i>into Team protocols</i>"
+        row_in_repository_private: "%{protocol} - <i>into My protocols</i>"
+      external_protocols:
+        search_bar_placeholder: 'Search for protocols'
+        protocolsio_title: 'Protocols.io'
+        sort_by:
+          title: 'Show first:'
+          alphabetically-asc: 'A-Z'
+          alphabetically-desc: 'Z-A'
+          newest: 'newest'
+          oldest: 'oldest'
+        list_panel:
+          empty_text: 'Search for protocols above to list them here'
+        preview_panel:
+          empty_title: 'PROTOCOL PREVIEW'
+          empty_subtext: 'Click on the protocol in the list to preview it here'
+          banner_text: 'Protocol Preview'
+        import:
+          public: "Team protocols"
+          private: "My protocols"
+          success_flash: 'Protocol <strong>%{name}</strong> successfully imported to %{type}.'
+
+    steps:
+      completed: 'Completed'
+      uncompleted: 'Uncompleted'
+      expand_label: "Expand All"
+      collapse_label: "Collapse All"
+      new_step: "New step"
+      subtitle: "Protocol Steps"
+      no_steps: "Protocol has no steps."
+      published_on: "Published on <em>%{timestamp}</em> by <em>%{user}</em>"
+      info_tab: "Info"
+      comments_tab: "Comments"
+      no_description: "This step has no description."
+      tables: "Tables"
+      files: "Attachments (%{count})"
+      comments: "Comments"
+      empty_checklist: "No items"
+      comment_title: "%{user} at %{time}:"
+      options:
+        up_arrow_title: "Move step up"
+        down_arrow_title: "Move step down"
+        comment_title: "Comments"
+        no_comments: "No comments"
+        new_comments: "New comment"
+        edit_title: "Edit step"
+        delete_title: "Delete step"
+        duplicate_title: "Duplicate step"
+        complete_title: "Complete step"
+        uncomplete_title: "Uncomplete step"
+      attachments:
+        modified_label: "Modified:"
+        sort:
+          new_html: "Newest first &#8595;"
+          old_html: "Oldest first &#8593;"
+          atoz_html: "Name &#8595;"
+          ztoa_html: "Name &#8593;"
+      new:
+        add_step_title: "Add new step"
+        tab_checklists: "Checklists"
+        tab_assets: "Files"
+        tab_tables: "Tables"
+        add_step: "Add"
+        name: "Step name"
+        name_placeholder: "mRNA sequencing"
+        description: "Description"
+        description_placeholder: "Write what should be done here ..."
+        checklist_panel_title: "Checklist"
+        checklist_name: "Checklist name"
+        checklist_name_placeholder: "Checklist name"
+        checklist_items: "Items"
+        checklist_item_placeholder: "Task"
+        checklist_add_item: "Add item"
+        add_checklist: "Add checklist"
+        table_panel_title: "Table"
+        table_name: "Table title"
+        table_name_placeholder: "Table title"
+        add_table: "Add table"
+        asset_panel_title: "File"
+        add_asset: "Add file"
+      edit:
+        edit_step_title: "Edit step"
+        edit_step: "Save"
+      destroy:
+        confirm: "Are you sure you want to delete step %{step}?"
+        success_flash: "Step %{step} successfully deleted."
+        error_flash: "Step %{step} couldn't be deleted. One or more files are locked."
+    edit:
+      head_title: "Edit protocol"
+    no_keywords: "No keywords"
+
+  invite_users:
+    to_team:
+      title: "Invite users to team %{team}"
+      heading: "Invite more people to team %{team} and start using SciNote."
+    no_team:
+      title: "Invite users to SciNote"
+      heading: "Invite more people to start using SciNote."
+    input_subtitle: "Input one or multiple emails, confirm each email with ENTER key."
+    invite_to_team_heading: "Invite users to my team:"
+    invite_btn: "Invite Users"
+    invite_guest: "As Guests"
+    invite_user: "As Normal Users"
+    invite_admin: "As Administrators"
+    errors:
+      recaptcha: "reCAPTCHA verification failed, please try again"
+    results:
+      heading: "Invitation results:"
+      user_exists: "User is already a member of SciNote."
+      user_exists_unconfirmed_invited_to_team: "User is already a member of SciNote but is not confirmed yet - successfully invited to team %{team} as %{role}."
+      user_exists_and_in_team: "User is already a member of SciNote and team %{team} as %{role}."
+      user_exists_invited_to_team: "User was already a member of SciNote - successfully invited to team %{team} as %{role}."
+      user_created: "User succesfully invited to SciNote."
+      user_created_invited_to_team: "User successfully invited to SciNote and team %{team} as %{role}."
+      user_invalid: "Invalid email."
+      too_many_emails: "Only invited first %{nr} emails. To invite more users, "
+
+  time:
+    formats:
+      full_js: "D.M.YYYY HH:mm"
+      full: "%{date_format} %H:%M"
+      full_with_tz: "%{date_format} %H:%M %z"
+      full_with_comma: "%{date_format}, %H:%M"
+      full_date: "%{date_format}"
+      time: "%H:%M"
+      short: "%H"
+
+  notifications:
+    title: "Notifications"
+    email_settings: "E-mail notifications"
+    form:
+      assignments: "Assignment"
+      notification_scinote: 'Show in SciNote'
+      notification_email: 'Notify me via email'
+      assignments_description: 'Assignment notifications appear whenever you get assigned to a team, project, task.'
+      recent_notification: 'Recent changes'
+      recent_notification_description: 'Recent changes notifications appear whenever there is a change on a task you are assigned to.'
+      system_message: "What's New in SciNote"
+      system_message_description: 'You will be notified about new SciNote features, releases and improvements you can benefit from.'
+    deliver:
+      download_link: "Download link:"
+      download_text: "Click the link to download the file."
+      email_subject: "Your SciNote export is ready!"
+      email_body_1: "The export of SciNote data that you requested is ready!"
+      email_body_2: "You can find the link to download the file below, or in your SciNote notifications. Please keep in mind that the link will expire in 7 days for security reasons."
+    show_all: "Show all notifications"
+    show_more: "Show more notifications"
+    no_notifications: "No notifications."
+    no_recent: "No recent notifications."
+    types:
+      assignment: "Assignment"
+      recent_changes: "Recent changes"
+      system_message: "SciNote system message"
+      deliver: 'Exportable content'
+    experiment_annotation_title: "%{user} mentioned you in experiment %{experiment}."
+    experiment_annotation_message_html: "Project: %{project} | Experiment: %{experiment}"
+    project_comment_annotation_title: "%{user} mentioned you in a comment on project %{project}."
+    project_annotation_message_html: "Project: %{project}"
+    my_module_comment_annotation_title: "%{user} mentioned you in a comment on task %{my_module}."
+    my_module_annotation_message_html: "Project: %{project} | Experiment: %{experiment} | Task: %{my_module}"
+    step_comment_annotation_title: "%{user} mentioned you in a comment on step %{step}."
+    step_description_title: "%{user} mentioned you in a description on step %{step}."
+    checklist_title: "%{user} mentioned you in a checklist on step %{step}."
+    step_annotation_message_html: "Project: %{project} | Experiment: %{experiment} | Task: %{my_module} | Step: %{step}"
+    result_annotation_title: "%{user} mentioned you in result %{result}."
+    result_comment_annotation_title: "%{user} mentioned you in a comment on result %{result}."
+    result_annotation_message_html: "Project: %{project} | Experiment: %{experiment} | Task: %{my_module}"
+    sample_annotation_title: "%{user} mentioned you in Column: %{column} of Sample %{sample}"
+    sample_annotation_message_html: "Sample: %{sample} | Column: %{column}"
+    repository_annotation_title: "%{user} mentioned you in Column: %{column} of Item %{record} in Inventory %{repository}"
+    repository_annotation_message_html: "Item: %{record} | Column: %{column}"
+    protocol_step_annotation_message_html: "Protocol: %{protocol}"
+    email_title: "You've received a SciNote notification!"
+    assign_user_to_team: "<i>%{assigned_user}</i> was added as %{role} to team <strong>%{team}</strong> by <i>%{assigned_by_user}</i>."
+    unassign_user_from_team: "<i>%{unassigned_user}</i> was removed from team <strong>%{team}</strong> by <i>%{unassigned_by_user}</i>."
+    task_completed: "%{user} completed task %{module}. %{date} | Project: %{project} | Experiment: %{experiment}"
+    start_work_on_next_task: "<i>%{user}</i> has completed the task <strong>%{module}</strong>. You can now start working on the next task in the workflow."
+    start_work_on_next_task_message: "Project: %{project} | Experiment: %{experiment} | Task: %{my_module}"
+
+  assets:
+    head_title:
+      edit: "SciNote | %{file_name} | Edit"
+      view: "SciNote | %{file_name} | View"
+    drag_n_drop:
+      label_html: 'Drag &amp; drop here. Copy &amp Paste images.'
+      browse_label: 'Select to Upload...'
+      drop_label: 'Drop to add to Step'
+      file_label: 'File'
+    from_clipboard:
+      modal_title: 'Add image from clipboard'
+      image_preview: 'Image preview'
+      add_image: 'Add'
+      file_name: 'File name'
+      file_name_placeholder: 'Image'
+    placeholder:
+      modified_label: "Modified:"
+    wopi_supported_text_formats_title: 'Only .docx, .docm, .odt file formats are supported for editing in Word Online.'
+    wopi_supported_table_formats_title: 'Only .xlsx, .xlsm, .xlsb, .ods file formats are supported for editing in Excel Online.'
+    wopi_supported_presentation_formats_title: 'Only .pptx, ppsx, .odp file formats are supported for editing in Powerpoint Online.'
+    create_wopi_file:
+      button_text: 'New Office file'
+      modal_title: 'Create new Microsoft Office Online document'
+      text_field_label: 'Document name & type'
+      text_field_placeholder: 'New Document'
+      ms_word: 'Word<br/>Online'
+      ms_excel: 'Excel<br/>Online'
+      ms_powerpoint: 'PowerPoint<br/>Online'
+      create_document_button: 'Create Document'
+      errors:
+        forbidden: 'You do not have permission to add files.'
+        not_found: 'Element not found.'
+  atwho:
+    no_results: "No results found"
+    users:
+      title: "People"
+      navigate_1: "up/down"
+      navigate_2: "to navigate"
+      confirm_1: "enter/tab"
+      confirm_2: "to confirm"
+      dismiss_1: "esc"
+      dismiss_2: "to dismiss"
+      popover_html: "<span class='silver'>Team:</span>&nbsp;%{team} <br> <span class='silver'>Role:</span>&nbsp;%{role} <br> <span class='silver'>Joined:</span>&nbsp;%{time}"
+    res:
+      archived: "(archived)"
+      removed: "(removed)"
+      deleted: "(deleted)"
+
+  dropdown_selector:
+    nothing_found: "Nothing found..."
+
+  create_task_service:
+    default_task_name: "New Task"
+
+  zip_export:
+    modal_label: 'Export inventory'
+    notification_title: 'Your requested export package is ready!'
+    expired_title: 'Looks like your link has expired.'
+    expired_description: 'Please export the data again in order to receive a new link.'
+    modal_html: "<p>Your export request is being processed.</p><p>When completed we will <strong>send an email to %{email}</strong> inbox with a link to your exported samples. Note that the link will expire in 7 days.</p>"
+    repository_header_html: 'You are about to export selected items in inventory %{repository}.'
+    files_alert: 'Files uploaded to inventory items will not be exported. Only filenames will be exported.'
+    repository_footer_html: 'Inventory will be exported in a .csv file format. You will receive <strong>email with a link</strong> where you can download it.'
+    export_request_success: "Export request received!"
+    export_error: "Error when creating zip export."
+
+  # This section contains general words that can be used in any parts of
+  # application.
+  tiny_mce:
+    upload_window_title: 'Insert an image from your computer'
+    upload_window_label: 'Choose an image'
+    choose_file: 'Choose file'
+    no_image_chosen: 'No image chosen'
+    unsupported_image_format: 'Unsupported image format'
+    insert_btn: 'Insert'
+    error_message: 'You must choose a file'
+    server_not_respond: "Didn't get a response from the server"
+    saved_label: "Saved"
+    leaving_warning: "You have made some changes, are you sure you want to leave this page?"
+    older_version_available: "Older version of the text below has been saved in the browser. Do you want to restore it?"
+    newer_version_available: "Newer version of the text below has been saved in the browser. Do you want to restore it?"
+  general:
+    save: "Save"
+    update: "Update"
+    edit: "Edit"
+    cancel: "Cancel"
+    save: "Save"
+    close: "Close"
+    create: 'Create'
+    no_comments: "No comments!"
+    more_comments: "More comments"
+    comment_placeholder: "Your Message"
+    comment_placeholder_new: "Add new comment…"
+    archived: "Archived"
+    sort:
+      new_html: "Newest first &#8595;"
+      old_html: "Oldest first &#8593;"
+      atoz_html: "Name &#8595;"
+      ztoa_html: "Name &#8593;"
+    module:
+      one: "task"
+      other: "tasks"
+    public: "public"
+    private: "private"
+    view: "View"
+    search: "Search"
+    file:
+      choose: "Choose File"
+      no_file_chosen: "No file chosen"
+      processing: "File is still being processed and cannot be downloaded yet."
+      total_size: "You can upload max %{size} MB of files at one time. Please remove one or more files and try to submit again."
+      size_exceeded: "File size must be less than %{file_size} MB."
+      blank: "You didn't select any file"
+      uploading: "If you leave this page, the file(s) that is/are currently uploading will not be saved! Are you sure you want to continue?"
+      upload_failure: "File upload error. Try again or contact the administrator."
+      file_name_too_long: 'is too long (maximum is %{limit} characters, with extension)'
+    text:
+      not_blank: "can't be blank"
+      length_too_long_general: "is too long"
+      length_too_long: "is too long (maximum is %{max_length} characters)"
+      length_too_short: "is too short (minimum is %{min_length} characters)"
+    query:
+      wrong_query: "All words in search query are either too short (minimum is %{min_length} characters) or too long (maximum is %{max_length} characters)"
+      length_too_long: "Search query is too long (maximum is %{max_length} characters)"
+      length_too_short: "Search query is too short (minimum is %{min_length} characters)"
+    busy: "The server is still processing your request. If you leave this page, the changes will be lost! Are you sure you want to continue?"
+    no_name: "(no name)"
+    error: "An error has occurred, please try again later."
+    filter: "Filter:"
+    filter_dots: "Filter..."
+    no_teams:
+      title: "Your dashboard is empty!"
+      text: "It seems you're not a member of any team."
+
+  api:
+    core:
+      status_ok: "Ok"
+      expired_token: "Token is expired"
+      invalid_token: "Token is invalid"
+      missing_token: "Core: No token in the header"
+      no_iss: "Core: Missing ISS in the token"
+      wrong_iss: "Default: Wrong ISS in the token"
+      no_user_mapping: "Default: User mapping not found"
+      no_azure_user_mapping: "Azure AD: User mapping not found"
+      errors:
+        general:
+          title: "Error"
+          detail: "Something went wrong, please contact resource owner"
+        parameter:
+          title: "Missing parameter"
+        validation:
+          title: "Validation error"
+        read_permission:
+          title: "Permission denied"
+          detail: "You don't have permission to access %{model}"
+        create_permission:
+          title: "Permission denied"
+          detail: "You don't have permission to create %{model}"
+        manage_permission:
+          title: "Permission denied"
+          detail: "You don't have permission to manage %{model}"
+        record_not_found:
+          title: "Not found"
+          detail: "%{model} record with id %{id} not found in the specified scope"
+        id_mismatch:
+          title: "Object ID mismatch"
+          detail: "Object ID mismatch in URL and request body"
+        type:
+          title: "Wrong type"
+          detail: "Wrong object type within parameters"
+        inventory_column_type:
+          detail: "Update of data_type attribute is not allowed"
+        result_missing_tinymce:
+          detail: "Text contains reference to nonexisting TinyMCE image"
+        result_wrong_tinymce:
+          detail: "Image reference not found in the text"
+
+
+  Add: "Add"
+  Asset: "File"
+  Assets: "Files"
+  Download: "Download"
+  Edit: "Edit"
+  Save: "Save"
+  SaveClose: "Save & Close"
+  Module: "Task"
+  Modules: "Tasks"
+  Project: "Project"
+  Projects: "Projects"
+  Experiments: "Experiments"
+  Result: "Result"
+  Results: "Results"
+  Protocol: "Protocol"
+  Protocols: "Protocols"
+  Checklist: "Checklist"
+  Checklists: "Checklists"
+  Table: "Table"
+  Tables: "Tables"
+  Sample: "Sample"
+  Samples: "Samples"
+  Repositories_team: "Inventories - %{team}"
+  Reports: "Reports"
+  Comments: "Comments"
+  Step: "Step"
+  Steps: "Steps"
+  Tag: "Tag"
+  Tags: "Tags"
+  Workflow: "Workflow"
+  Workflows: "Workflows"
+  More: "More"
+  Added: 'Added'
+  by: 'by'
+
+  client_api:
+    permission_error: "You don't have permission for this action."
+    invalid_arguments: "Invalid arguments"
+    generic_error_message: "Something went wrong! Please try again later."
+    user_teams:
+      permission_error: "You don't have permission to manage users."
+      leave_team_error: "An error occured."
+      leave_flash: "Successfuly left team %{team}."
+    teams:
+      create_permission_error: "You don't have permission to create team."
+      update_permission_error: "You don't have permission to edit this team."
+    user:
+      current_password_invalid: "incorrect password"
+      password_confirmation_not_match: "doesn't match"
+    invite_users:
+      permission_error: "You don't have permission to invite additional users to this team. Contact its administrator/s."
+
+  marvinjs:
+    new_sketch: "New Chemical Drawing"
+    new_button: "Create Chemical Drawing"
+    structure_placeholder: "Click here to enter Chemical Drawing name"
+    modal_name_title: "Chemical Drawing name:"
+    checmical_drawing: "Chemical drawings"
